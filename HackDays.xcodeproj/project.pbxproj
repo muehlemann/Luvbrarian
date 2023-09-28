@@ -21,6 +21,7 @@
 		0A1D72162AC5C92D004D76AE /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D72152AC5C92D004D76AE /* Book.swift */; };
 		0A1D72182AC5D3A3004D76AE /* BookCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D72172AC5D3A3004D76AE /* BookCard.swift */; };
 		557065C62AC5E49500FEB4CD /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557065C52AC5E49500FEB4CD /* Prompt.swift */; };
+		F3FBD5152AC613F60067CFFE /* NavbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBD5142AC613F60067CFFE /* NavbarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		0A1D72152AC5C92D004D76AE /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		0A1D72172AC5D3A3004D76AE /* BookCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCard.swift; sourceTree = "<group>"; };
 		557065C52AC5E49500FEB4CD /* Prompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompt.swift; sourceTree = "<group>"; };
+		F3FBD5142AC613F60067CFFE /* NavbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavbarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 				0A1D71ED2AC5C1B8004D76AE /* HackDays.entitlements */,
 				0A1D71EE2AC5C1B8004D76AE /* Preview Content */,
 				0A1D72172AC5D3A3004D76AE /* BookCard.swift */,
+				F3FBD5142AC613F60067CFFE /* NavbarView.swift */,
 				0A1626E32AC5EB5C00F5B68F /* SwipeView.swift */,
 				0A1626E52AC5EC2700F5B68F /* BookDetailView.swift */,
 			);
@@ -308,6 +311,7 @@
 				0A1D71EA2AC5C1B7004D76AE /* ContentView.swift in Sources */,
 				0A1D71E82AC5C1B7004D76AE /* HackDaysApp.swift in Sources */,
 				0A1D72182AC5D3A3004D76AE /* BookCard.swift in Sources */,
+				F3FBD5152AC613F60067CFFE /* NavbarView.swift in Sources */,
 				0A1626E42AC5EB5C00F5B68F /* SwipeView.swift in Sources */,
 				0A1D72162AC5C92D004D76AE /* Book.swift in Sources */,
 				557065C62AC5E49500FEB4CD /* Prompt.swift in Sources */,
