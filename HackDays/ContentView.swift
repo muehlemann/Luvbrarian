@@ -16,14 +16,23 @@ struct ContentView: View {
 
     var body: some View {
         if (page == .matches) {
-            Text("Matches View Here")
+            VStack {
+                Text("Matches View Here")
+                NavbarView(
+                    onBookClick: { Page in page = .books},
+                    onMatchesClick: { Page in page = .matches}
+                )
+            }
         } else {
-            SwipeView()
+            VStack {
+                SwipeView()
+                NavbarView(
+                    onBookClick: { Page in page = .books},
+                    onMatchesClick: { Page in page = .matches}
+                )
+            }
         }
         
-        NavbarView(
-            onBookClick: { Page in page = .books},
-            onMatchesClick: { Page in page = .matches}
-        )
+
     }
 }
