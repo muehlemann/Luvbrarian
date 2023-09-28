@@ -12,16 +12,22 @@ struct BookCard: View {
     @State private var translation: CGSize = .zero
     
     private var book: Book
+    private var onClick: (_ book: Book) -> Void
     private var onRemove: (_ book: Book, _ isLiked: Bool) -> Void
-    
+
     private var thresholdPercentage: CGFloat = 0.5
     
     private enum LikeDislike: Int {
         case like, dislike, none
     }
     
-    init(book: Book, onRemove: @escaping (_ book: Book, _ isLiked: Bool) -> Void) {
+    init(
+        book: Book,
+        onClick: @escaping (_ book: Book) -> Void,
+        onRemove: @escaping (_ book: Book, _ isLiked: Bool) -> Void
+    ) {
         self.book = book
+        self.onClick = onClick
         self.onRemove = onRemove
     }
     
@@ -48,6 +54,10 @@ struct BookCard: View {
                             .font(.subheadline)
                             .foregroundColor(.gray)
                     }
+                    .onTapGesture {
+                        onClick(book)
+                    }
+                    
                     Spacer()
                 }
                 .padding(.horizontal)
