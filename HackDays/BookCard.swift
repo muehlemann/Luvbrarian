@@ -41,9 +41,16 @@ struct BookCard: View {
         GeometryReader { geometry in
             VStack(alignment: .leading) {
                 
-                AsyncImage(url: URL(string: book.imageURL))
-                    .frame(width: geometry.size.width, height: geometry.size.height * 0.75)
-                    .clipped()
+                AsyncImage(
+                    url: URL(string: book.imageURL),
+                    content: { image in
+                        image.resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(maxWidth: geometry.size.width, maxHeight: geometry.size.height * 0.75)
+                    },
+                    placeholder: {
+                        ProgressView()
+                    })
                 
                 HStack {
                     VStack(alignment: .leading, spacing: 6) {
