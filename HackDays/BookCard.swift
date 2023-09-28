@@ -77,8 +77,10 @@ struct BookCard: View {
                         VStack(alignment: .leading, spacing: 10) {
                             Text(randomPrompt.question)
                                 .font(.title3)
+                                .fixedSize(horizontal: false, vertical: true)
                             Text(randomPrompt.answer)
                                 .font(.subheadline)
+                                .fixedSize(horizontal: false, vertical: true)
                             Spacer()
                         }
                         .padding(.top)
