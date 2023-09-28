@@ -21,47 +21,34 @@ struct BookDetailView: View {
 
             ScrollView {
                 VStack(alignment: .leading) {
-                    AsyncImage(
-                        url: URL(string: book.imageURL),
-                        content: { image in
-                            image.resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(maxWidth: geometry.size.width, maxHeight: geometry.size.height * 0.75)
-                        },
-                        placeholder: {
-                            ProgressView()
-                        })
                     
-                    VStack(alignment: .leading) {
+                    BookImage(book: book, geometry: geometry, percentage: 0.75)
+                    
+                    VStack(alignment: .leading, spacing: 6) {
+                        Text(book.title)
+                            .font(.title)
+                            .bold()
+                            .padding(.top)
                         
+                        Text(book.author)
+                            .font(.subheadline)
                         
                         HStack {
-                            VStack(alignment: .leading, spacing: 6) {
-                                Text(book.title)
-                                    .font(.title)
-                                    .bold()
-                                    .padding(.top)
-                                Text(book.author)
-                                    .font(.subheadline)
-                                HStack {
-                                    Image("pages")
-                                        .resizable()
-                                        .frame(width: 32.0, height: 32.0)
-                                    Text(book.pageCount)
-                                        .font(.subheadline)
-                                        .foregroundColor(.gray)
-                                    Image("category")
-                                        .resizable()
-                                        .frame(width: 32.0, height: 32.0)
-                                    Text(book.category)
-                                        .font(.subheadline)
-                                        .foregroundColor(.gray)
-                                    Spacer()
-                                }
-                                .padding(.vertical)
-                            }
+                            Image("pages")
+                                .resizable()
+                                .frame(width: 32.0, height: 32.0)
+                            Text(book.pageCount)
+                                .font(.subheadline)
+                                .foregroundColor(.gray)
+                            Image("category")
+                                .resizable()
+                                .frame(width: 32.0, height: 32.0)
+                            Text(book.category)
+                                .font(.subheadline)
+                                .foregroundColor(.gray)
+                            Spacer()
                         }
-                        
+                        .padding(.vertical)
                         
                         VStack(alignment: .leading, spacing: 10) {
                             ForEach(book.prompts, id: \.question) { prompt in

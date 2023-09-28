@@ -37,57 +37,47 @@ struct BookCard: View {
     
     var body: some View {
         GeometryReader { geometry in
-            VStack(alignment: .leading) {
+            ZStack(alignment: .leading) {
 
-                AsyncImage(
-                    url: URL(string: book.imageURL),
-                    content: { image in
-                        image.resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(maxWidth: geometry.size.width, maxHeight: geometry.size.height * 0.75)
-                    },
-                    placeholder: {
-                        ProgressView()
-                    })
-                
-                VStack(alignment: .leading, spacing: 6) {
-                    Text(book.title)
-                        .font(.title)
-                        .bold()
-                    Text(book.author)
-                        .font(.subheadline)
-                    HStack {
-                        Image("pages")
-                            .resizable()
-                            .frame(width: 32.0, height: 32.0)
-                        Text(book.pageCount)
-                            .font(.subheadline)
-                            .foregroundColor(.gray)
-                        Image("category")
-                            .resizable()
-                            .frame(width: 32.0, height: 32.0)
-                        Text(book.category)
-                            .font(.subheadline)
-                            .foregroundColor(.gray)
-                        Spacer()
+                BookImage(book: book, geometry: geometry, percentage: 1.0)
+
+                VStack {
+                    Spacer()
+                    
+                    VStack(alignment: .leading, spacing: 6) {
+                        HStack {
+                            Image("pages")
+                                .resizable()
+                                .frame(width: 32.0, height: 32.0)
+                            Text(book.pageCount)
+                                .font(.subheadline)
+                                .foregroundColor(.gray)
+                            Image("category")
+                                .resizable()
+                                .frame(width: 32.0, height: 32.0)
+                            Text(book.category)
+                                .font(.subheadline)
+                                .foregroundColor(.gray)
+                            Spacer()
+                        }
+                        
+                        VStack(alignment: .leading, spacing: 10) {
+                            Text(randomPrompt.question)
+                                .font(.title3)
+                                .fixedSize(horizontal: false, vertical: true)
+                            Text(randomPrompt.answer)
+                                .font(.subheadline)
+                                .fixedSize(horizontal: false, vertical: true)
+                        }
+                        .padding(.vertical)
                     }
-                  
-                    VStack(alignment: .leading, spacing: 10) {
-                        Text(randomPrompt.question)
-                            .font(.title3)
-                            .fixedSize(horizontal: false, vertical: true)
-                        Text(randomPrompt.answer)
-                            .font(.subheadline)
-                            .fixedSize(horizontal: false, vertical: true)
-                        Spacer()
-                    }
-                    .padding(.top)
+                    .padding()
+                    .background(Color.white)
                 }
-                .padding(.horizontal)
-                
-                Spacer()
+                .background(LinearGradient(
+                    gradient: Gradient(colors: [.clear, .clear, .clear, .black.opacity(0.2)]),
+                    startPoint: .top, endPoint: .bottom))
             }
-            .padding(.bottom)
             .background(Color.white)
             .cornerRadius(10)
             .shadow(radius: 5)
