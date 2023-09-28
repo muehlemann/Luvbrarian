@@ -16,7 +16,7 @@ struct BookCard: View {
     private var onRemove: (_ book: Book, _ isLiked: Bool) -> Void
     private var randomPrompt: Prompt
     
-    private var thresholdPercentage: CGFloat = 0.5
+    private var thresholdPercentage: CGFloat = 0.4
     
     private enum LikeDislike: Int {
         case like, dislike, none
@@ -28,7 +28,7 @@ struct BookCard: View {
     ) {
         self.book = book
         self.onRemove = onRemove
-        self.randomPrompt = book.prompts.randomElement()!
+        self.randomPrompt = book.prompts[book.featuredPromptIdx]
     }
     
     private func getGesturePercentage(_ geometry: GeometryProxy, from gesture: DragGesture.Value) -> CGFloat {
@@ -71,6 +71,7 @@ struct BookCard: View {
                             .foregroundColor(.gray)
                         Spacer()
                     }
+                  
                     VStack(alignment: .leading, spacing: 10) {
                         Text(randomPrompt.question)
                             .font(.title3)

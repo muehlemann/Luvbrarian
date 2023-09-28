@@ -45,7 +45,8 @@ class BookViewModel: ObservableObject{
                            answer: "Celestial beings from the other side of the tracks"),
                     Prompt(question: "I know the best spot in town for…",
                            answer: "Escaping from reality / creating our own"),
-                ]),
+                ],
+                featuredPromptIdx: Int.random(in: 0...2)),
             Book(
                 id: "1",
                 author: "Ben McKenzie",
@@ -60,7 +61,8 @@ class BookViewModel: ObservableObject{
                            answer: "My author was in The OC, Smallville, and Gotham"),
                     Prompt(question: "I know the best spot in town for...",
                            answer: "Having an interview with Sam Bankman-Fried"),
-                ]),
+                ],
+                featuredPromptIdx: Int.random(in: 0...2)),
             Book(
                 id: "2",
                 author: "Gus Moreno",
@@ -74,21 +76,73 @@ class BookViewModel: ObservableObject{
                     Prompt(question: "I’m weirdly attracted to…",
                            answer: "Demonic entities (or at least they’re attracted to me)."),
                     Prompt(question: "The one thing I’d like to know about you is…",
-                           answer: "If you are still alive.")]),
-                Book(
-                    id: "3",
-                    author: "Jennette McCurdy",
-                    title: "I'm Glad My Mom Died",
-                    pageCount: "314",
-                    category: "Memoir",
-                    imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_2,c_scale,w_405/v1689632693/pro_pbid_4948915.jpg",
-                    prompts: [
-                        Prompt(question: "You should leave a comment if…",
-                               answer: "You have childhood trauma!"),
-                        Prompt(question: "My simple pleasures…",
-                               answer: "Are funerals and a good joke."),
-                        Prompt(question: "Green flags I look for…",
-                               answer: "You go to therapy and do not think you are the second coming of Christ."),])
-                ]
+                           answer: "If you are still alive.")
+                ],
+                featuredPromptIdx: Int.random(in: 0...2)),
+            Book(
+                id: "3",
+                author: "Jennette McCurdy",
+                title: "I'm Glad My Mom Died",
+                pageCount: "314",
+                category: "Memoir",
+                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_2,c_scale,w_405/v1689632693/pro_pbid_4948915.jpg",
+                prompts: [
+                    Prompt(question: "You should leave a comment if…",
+                           answer: "You have childhood trauma!"),
+                    Prompt(question: "My simple pleasures…",
+                           answer: "Are funerals and a good joke."),
+                    Prompt(question: "Green flags I look for…",
+                           answer: "You go to therapy and do not think you are the second coming of Christ.")
+                ],
+                featuredPromptIdx: Int.random(in: 0...2)),
+            Book(
+                id: "4",
+                author: "Noviolet Bulawayo",
+                title: "Glory",
+                pageCount: "403",
+                category: "Satire, Historical Fiction, Political Fiction",
+                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1646751717/pro_pbid_4875402.jpg",
+                prompts: [
+                    Prompt(question: "This year I really wanted to…",
+                           answer: "Overthrow the government, but my mom wouldn’t let me :("),
+                    Prompt(question: "Typical Sunday…",
+                           answer: "I wake up and make a cup of tea, and then have my horse and pig brethren spy on my citizens to make sure no one says anything mean about me."),
+                    Prompt(question: "I know the best spot in town…",
+                           answer: "To make a dramatic reappearance after exile.")
+                ],
+                featuredPromptIdx: Int.random(in: 0...2)),
+            Book(
+                id: "5",
+                author: "Akwaeke Emezi",
+                title: "You Made a Fool of Death with Your Beauty",
+                pageCount: "279",
+                category: "Romance",
+                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1655915297/pro_pbid_4941429.jpg",
+                prompts: [
+                    Prompt(question: "Green flags I look for…",
+                           answer: "You are my boyfriend’s dad and also a little bisexual."),
+                    Prompt(question: "Best travel story…",
+                           answer: "I got invited to the Caribbean to display my art in a gallery, and let me tell you that my paintings weren’t the only art on display…"),
+                    Prompt(question: "The secret to getting to know me is…",
+                           answer: "Catching me at my saddest. Run with me at 5 am and you might just get to join me in a good cry ;)")
+                ],
+                featuredPromptIdx: Int.random(in: 0...2)),
+            Book(
+                id: "6",
+                author: "Tamora Pierce",
+                title: "Protector of the Small",
+                pageCount: "791 across 4 books",
+                category: "Fantasy, YA",
+                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_2,c_scale,w_405/v1515394408/pro_pbid_805749.jpg",
+                prompts: [
+                    Prompt(question: "You should leave a comment if…",
+                           answer: "Your psyche was altered by books you read when you were 10"),
+                    Prompt(question: "Unusual skills…",
+                           answer: "Jousting, sword fighting, etc"),
+                    Prompt(question: "Together we could…",
+                           answer: "Fight bullies and stand up for the small")
+                ],
+                featuredPromptIdx: Int.random(in: 0...2)),
+            ]
     }
 }
