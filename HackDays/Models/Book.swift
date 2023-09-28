@@ -12,6 +12,8 @@ struct Book {
     var id: String
     var author: String
     var title: String
-    var description: String
+    var pageCount: String
+    var category: String
     var imageURL: String
+    var prompts: Array<Prompt>
 }

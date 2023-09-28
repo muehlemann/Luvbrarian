@@ -44,7 +44,7 @@ struct BookCard: View {
                             .bold()
                         Text(book.author)
                             .font(.subheadline)
-                        Text(book.description)
+                        Text(book.category)
                             .font(.subheadline)
                             .foregroundColor(.gray)
                     }

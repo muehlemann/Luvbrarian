@@ -16,6 +16,7 @@
 		0A1D72062AC5C1B8004D76AE /* HackDaysUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D72052AC5C1B8004D76AE /* HackDaysUITestsLaunchTests.swift */; };
 		0A1D72162AC5C92D004D76AE /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D72152AC5C92D004D76AE /* Book.swift */; };
 		0A1D72182AC5D3A3004D76AE /* BookCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D72172AC5D3A3004D76AE /* BookCard.swift */; };
+		557065C62AC5E49500FEB4CD /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557065C52AC5E49500FEB4CD /* Prompt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0A1D72052AC5C1B8004D76AE /* HackDaysUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackDaysUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0A1D72152AC5C92D004D76AE /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		0A1D72172AC5D3A3004D76AE /* BookCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCard.swift; sourceTree = "<group>"; };
+		557065C52AC5E49500FEB4CD /* Prompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				0A1D72152AC5C92D004D76AE /* Book.swift */,
+				557065C52AC5E49500FEB4CD /* Prompt.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				0A1D71E82AC5C1B7004D76AE /* HackDaysApp.swift in Sources */,
 				0A1D72182AC5D3A3004D76AE /* BookCard.swift in Sources */,
 				0A1D72162AC5C92D004D76AE /* Book.swift in Sources */,
+				557065C62AC5E49500FEB4CD /* Prompt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
