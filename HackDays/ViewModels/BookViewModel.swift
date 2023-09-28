@@ -41,7 +41,8 @@ class BookViewModel: ObservableObject{
                            answer: "Celestial beings from the other side of the tracks"),
                     Prompt(question: "I know the best spot in town for…",
                            answer: "Escaping from reality / creating our own"),
-                ]),
+                ],
+                featuredPromptIdx: Int.random(in: 0...2)),
             Book(
                 id: "1",
                 author: "Ben McKenzie",
@@ -56,7 +57,8 @@ class BookViewModel: ObservableObject{
                            answer: "My author was in The OC, Smallville, and Gotham"),
                     Prompt(question: "I know the best spot in town for...",
                            answer: "Having an interview with Sam Bankman-Fried"),
-                ]),
+                ],
+                featuredPromptIdx: Int.random(in: 0...2)),
             Book(
                 id: "2",
                 author: "Gus Moreno",
@@ -70,21 +72,25 @@ class BookViewModel: ObservableObject{
                     Prompt(question: "I’m weirdly attracted to…",
                            answer: "Demonic entities (or at least they’re attracted to me)."),
                     Prompt(question: "The one thing I’d like to know about you is…",
-                           answer: "If you are still alive.")]),
-                Book(
-                    id: "3",
-                    author: "Jennette McCurdy",
-                    title: "I'm Glad My Mom Died",
-                    pageCount: "314",
-                    category: "Memoir",
-                    imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_2,c_scale,w_405/v1689632693/pro_pbid_4948915.jpg",
-                    prompts: [
-                        Prompt(question: "You should leave a comment if…",
-                               answer: "You have childhood trauma!"),
-                        Prompt(question: "My simple pleasures…",
-                               answer: "Are funerals and a good joke."),
-                        Prompt(question: "Green flags I look for…",
-                               answer: "You go to therapy and do not think you are the second coming of Christ."),])
-                ]
+                           answer: "If you are still alive.")
+                ],
+                featuredPromptIdx: Int.random(in: 0...2)),
+            Book(
+                id: "3",
+                author: "Jennette McCurdy",
+                title: "I'm Glad My Mom Died",
+                pageCount: "314",
+                category: "Memoir",
+                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_2,c_scale,w_405/v1689632693/pro_pbid_4948915.jpg",
+                prompts: [
+                    Prompt(question: "You should leave a comment if…",
+                           answer: "You have childhood trauma!"),
+                    Prompt(question: "My simple pleasures…",
+                           answer: "Are funerals and a good joke."),
+                    Prompt(question: "Green flags I look for…",
+                           answer: "You go to therapy and do not think you are the second coming of Christ.")
+                ],
+                featuredPromptIdx: Int.random(in: 0...2)),
+            ]
     }
 }

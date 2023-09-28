@@ -16,4 +16,5 @@ struct Book {
     var category: String
     var imageURL: String
     var prompts: Array<Prompt>
+    var featuredPromptIdx: Int
 }
