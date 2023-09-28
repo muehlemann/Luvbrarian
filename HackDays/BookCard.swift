@@ -30,7 +30,7 @@ struct BookCard: View {
         self.book = book
         self.onClick = onClick
         self.onRemove = onRemove
-        self.randomPrompt = book.prompts.randomElement()!
+        self.randomPrompt = book.prompts[book.featuredPromptIdx]
     }
     
     private func getGesturePercentage(_ geometry: GeometryProxy, from gesture: DragGesture.Value) -> CGFloat {
