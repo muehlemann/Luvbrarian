@@ -13,6 +13,7 @@ struct BookCard: View {
     
     private var book: Book
     private var onRemove: (_ book: Book, _ isLiked: Bool) -> Void
+    private var randomPrompt: Prompt
     
     private var thresholdPercentage: CGFloat = 0.5
     
@@ -23,6 +24,7 @@ struct BookCard: View {
     init(book: Book, onRemove: @escaping (_ book: Book, _ isLiked: Bool) -> Void) {
         self.book = book
         self.onRemove = onRemove
+        self.randomPrompt = book.prompts.randomElement()!
     }
     
     private func getGesturePercentage(_ geometry: GeometryProxy, from gesture: DragGesture.Value) -> CGFloat {
@@ -44,9 +46,29 @@ struct BookCard: View {
                             .bold()
                         Text(book.author)
                             .font(.subheadline)
-                        Text(book.category)
-                            .font(.subheadline)
+                        HStack {
+                            Image("pages")
+                                .resizable()
+                                .frame(width: 32.0, height: 32.0)
+                            Text(book.pageCount)
+                                .font(.subheadline)
+                                .foregroundColor(.gray)
+                            Image("category")
+                                .resizable()
+                                .frame(width: 32.0, height: 32.0)
+                            Text(book.category)
+                                .font(.subheadline)
                             .foregroundColor(.gray)
+                            Spacer()
+                        }
+                        VStack(alignment: .leading, spacing: 10) {
+                            Text(randomPrompt.question)
+                                .font(.title3)
+                            Text(randomPrompt.answer)
+                                .font(.subheadline)
+                            Spacer()
+                        }
+                        .padding(.top)
                     }
                     Spacer()
                 }
