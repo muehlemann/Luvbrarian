@@ -42,7 +42,7 @@ class BookViewModel: ObservableObject{
                     Prompt(question: "I know the best spot in town for…",
                            answer: "Escaping from reality / creating our own"),
                 ],
-                featuredPromptIdx: 1),
+                featuredPromptIdx: Int.random(in: 0...2)),
             Book(
                 id: "1",
                 author: "Ben McKenzie",
@@ -58,7 +58,7 @@ class BookViewModel: ObservableObject{
                     Prompt(question: "I know the best spot in town for...",
                            answer: "Having an interview with Sam Bankman-Fried"),
                 ],
-                featuredPromptIdx: 1),
+                featuredPromptIdx: Int.random(in: 0...2)),
             Book(
                 id: "2",
                 author: "Gus Moreno",
@@ -74,7 +74,7 @@ class BookViewModel: ObservableObject{
                     Prompt(question: "The one thing I’d like to know about you is…",
                            answer: "If you are still alive.")
                 ],
-                featuredPromptIdx: 1),
+                featuredPromptIdx: Int.random(in: 0...2)),
             Book(
                 id: "3",
                 author: "Jennette McCurdy",
@@ -90,7 +90,7 @@ class BookViewModel: ObservableObject{
                     Prompt(question: "Green flags I look for…",
                            answer: "You go to therapy and do not think you are the second coming of Christ.")
                 ],
-                featuredPromptIdx: 1),
+                featuredPromptIdx: Int.random(in: 0...2)),
             ]
     }
 }
