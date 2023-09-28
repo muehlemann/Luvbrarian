@@ -12,6 +12,7 @@ struct BookImage: View {
     var geometry: GeometryProxy
     var percentage: CGFloat
     
+    
     var body: some View {
         AsyncImage(
             url: URL(string: book.imageURL),
