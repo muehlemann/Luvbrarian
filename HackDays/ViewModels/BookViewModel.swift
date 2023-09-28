@@ -145,6 +145,37 @@ class BookViewModel: ObservableObject{
                            answer: "Fight bullies and stand up for the small")
                 ],
                 featuredPromptIdx: Int.random(in: 0...2)),
+            Book(
+                id: "7",
+                author: "Shannon Chakraborty",
+                title: "The Adventures of Amina al-Serafi",
+                pageCount: "496",
+                category: "Fantasy",
+                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_2,c_scale,w_405/v1676562526/pro_pbid_5088914.jpg",
+                prompts: [
+                    Prompt(question: "The best way to ask me out is by…",
+                           answer: "Proposing! Don’t worry about it, it’s a religious upbringing thing."),
+                    Prompt(question: "I’m Weirdly Attracted to…",
+                           answer: "Ragtag bands of misfit sailors… and the occasional demon"),
+                    Prompt(question: "This year I really want to…",
+                           answer: "Successfully implement a get-rich-quick scheme without world-altering entanglements")
+                ],
+                featuredPromptIdx: Int.random(in: 0...2)),
             ]
+        
+        
+
+        
+
+
+        
+
+        
+
+
+        
+
+        
+
     }
 }
