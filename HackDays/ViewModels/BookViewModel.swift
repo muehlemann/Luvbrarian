@@ -184,6 +184,44 @@ class BookViewModel: ObservableObject{
                           answer: "Fight bullies and stand up for the small")
                ],
                featuredPromptIdx: Int.random(in: 0...2)),
-           ]
+            Book(
+                id: "7",
+                author: "Shannon Chakraborty",
+                title: "The Adventures of Amina al-Serafi",
+                description: """
+                Amina al-Sirafi should be content. After a storied and scandalous career as one of the Indian Ocean’s most notorious pirates, she’s survived backstabbing rogues, vengeful merchant princes, several husbands, and one actual demon to retire peacefully with her family to a life of piety, motherhood, and absolutely nothing that hints of the supernatural.\n
+                But when she’s tracked down by the obscenely wealthy mother of a former crewman, she’s offered a job no bandit could refuse: retrieve her comrade’s kidnapped daughter for a kingly sum. The chance to have one last adventure with her crew, do right by an old friend, and win a fortune that will secure her family’s future forever? It seems like such an obvious choice that it must be God’s will.\n
+                Yet the deeper Amina dives, the more it becomes alarmingly clear there’s more to this job, and the girl’s disappearance, than she was led to believe. For there’s always risk in wanting to become a legend, to seize one last chance at glory, to savor just a bit more power…and the price might be your very soul
+                """,
+                pageCount: "496",
+                category: "Fantasy",
+                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_2,c_scale,w_405/v1676562526/pro_pbid_5088914.jpg",
+                review: 4.7,
+                prompts: [
+                    Prompt(question: "The best way to ask me out is by…",
+                           answer: "Proposing! Don’t worry about it, it’s a religious upbringing thing."),
+                    Prompt(question: "I’m Weirdly Attracted to…",
+                           answer: "Ragtag bands of misfit sailors… and the occasional demon"),
+                    Prompt(question: "This year I really want to…",
+                           answer: "Successfully implement a get-rich-quick scheme without world-altering entanglements")
+                ],
+                featuredPromptIdx: Int.random(in: 0...2)),
+            ]
+        
+        
+
+        
+
+
+        
+
+        
+
+
+        
+
+        
+
+>>>>>>> main
     }
 }

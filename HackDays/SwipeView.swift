@@ -16,6 +16,7 @@ struct SwipeView: View {
                 GeometryReader { geometry in
                     VStack(spacing: 24) {
                         ZStack {
+                            NoMoreBooks()
                             ForEach(viewModel.books, id: \.id) { book in
                                 Group {
                                     BookCard(
