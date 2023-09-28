@@ -16,6 +16,7 @@ class BookViewModel: ObservableObject{
     
     func markBook(book: Book, isLiked: Bool) {
         books.removeAll { it in it.id == book.id }
+        UserDefaults.standard.set(isLiked, forKey: book.id)
     }
     
     private func populateStaticBooks() -> [Book] {
