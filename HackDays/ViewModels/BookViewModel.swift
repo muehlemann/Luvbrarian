@@ -207,21 +207,5 @@ class BookViewModel: ObservableObject{
                 ],
                 featuredPromptIdx: Int.random(in: 0...2)),
             ]
-        
-        
-
-        
-
-
-        
-
-        
-
-
-        
-
-        
-
->>>>>>> main
     }
 }
