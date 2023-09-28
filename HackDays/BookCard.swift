@@ -54,8 +54,10 @@ struct BookCard: View {
                     Text(book.title)
                         .font(.title)
                         .bold()
+                        .foregroundColor(.black)
                     Text(book.author)
                         .font(.subheadline)
+                        .foregroundColor(.black)
                     HStack {
                         Image("pages")
                             .resizable()
@@ -76,9 +78,11 @@ struct BookCard: View {
                         Text(randomPrompt.question)
                             .font(.title3)
                             .fixedSize(horizontal: false, vertical: true)
+                            .foregroundColor(.black)
                         Text(randomPrompt.answer)
                             .font(.subheadline)
                             .fixedSize(horizontal: false, vertical: true)
+                            .foregroundColor(.black)
                         Spacer()
                     }
                     .padding(.top)
