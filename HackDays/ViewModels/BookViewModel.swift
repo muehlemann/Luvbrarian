@@ -17,16 +17,18 @@ class BookViewModel: ObservableObject{
     func markBook(book: Book, isLiked: Bool) {
         books.removeAll { it in it.id == book.id }
         UserDefaults.standard.set(isLiked, forKey: book.id)
-        
-        if (UserDefaults.standard.value(forKey: book.id) != nil) {
-            print("Saved value for \(book.id):\(book.title) is \(UserDefaults.standard.bool(forKey: book.id))")
-        } else {
-            print("Saved value for \(book.id):\(book.title) is nil")
-        }
     }
     
-    func getLikeStatusById(bookId: String) -> Bool? {
-        return UserDefaults.standard.bool(forKey: bookId)
+    func getLikedBooks() -> [Book] {
+        var likedBooks: [Book] = []
+        
+        books.forEach { book in
+            if (UserDefaults.standard.bool(forKey: book.id)) {
+                likedBooks.append(book)
+            }
+        }
+        
+        return likedBooks
     }
     
     private func populateStaticBooks() -> [Book] {
