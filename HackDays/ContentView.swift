@@ -8,7 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var page = Page.books
+
+    private enum Page: Int {
+        case matches, books, none
+    }
+
     var body: some View {
-        SwipeView()
+        if (page == .matches) {
+            Text("Matches View Here")
+        } else {
+            SwipeView()
+        }
+        
+        NavbarView(
+            onBookClick: { Page in page = .books},
+            onMatchesClick: { Page in page = .matches}
+        )
     }
 }
