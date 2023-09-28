@@ -9,15 +9,9 @@ import SwiftUI
 
 struct SwipeView: View {
     @ObservedObject var viewModel = BookViewModel()
-
-    
-    @State private var navigateToDetails: Bool = false
-
     
     var body: some View {
-        
         NavigationView {
-            
             VStack {
                 GeometryReader { geometry in
                     VStack(spacing: 24) {
@@ -26,16 +20,10 @@ struct SwipeView: View {
                                 Group {
                                     BookCard(
                                         book: book,
-                                        onClick: { book in
-                                            navigateToDetails = true
-                                        },
                                         onRemove: { book, isLiked in
                                             viewModel.markBook(book: book, isLiked: isLiked)
                                             print("Swiped on \(book.title). Liked: \(isLiked)")
                                         })
-                                    .sheet(isPresented: $navigateToDetails) {
-                                        BookDetailView(book: book)
-                                    }
                                 }
                             }
                         }
@@ -45,6 +33,5 @@ struct SwipeView: View {
             }
             .padding()
         }
-        
     }
 }
