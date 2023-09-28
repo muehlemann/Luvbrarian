@@ -39,7 +39,18 @@ struct BookCard: View {
         GeometryReader { geometry in
             ZStack(alignment: .leading) {
 
-                BookImage(book: book, geometry: geometry, percentage: 1.0)
+                VStack {
+                    
+                    BookImage(
+                        book: book,
+                        geometry: geometry,
+                        percentage: 0.8,
+                        contentMode: .fit
+                    )
+                 
+                    Spacer()
+                }
+                .frame(width: geometry.size.width, height: geometry.size.height)
 
                 VStack {
                     Spacer()
@@ -75,7 +86,7 @@ struct BookCard: View {
                     .background(Color.white)
                 }
                 .background(LinearGradient(
-                    gradient: Gradient(colors: [.clear, .clear, .clear, .black.opacity(0.2)]),
+                    gradient: Gradient(colors: [.clear, .clear, .black]),
                     startPoint: .top, endPoint: .bottom))
             }
             .background(Color.white)
