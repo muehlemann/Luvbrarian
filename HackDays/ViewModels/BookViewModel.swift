@@ -25,6 +25,10 @@ class BookViewModel: ObservableObject{
         }
     }
     
+    func getLikeStatusById(bookId: String) -> Bool? {
+        return UserDefaults.standard.bool(forKey: bookId)
+    }
+    
     private func populateStaticBooks() -> [Book] {
         return [
             Book(

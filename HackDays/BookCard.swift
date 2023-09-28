@@ -10,9 +10,9 @@ import SwiftUI
 struct BookCard: View {
     @State private var offset: CGSize = .zero
     @State private var translation: CGSize = .zero
-    
+    @State private var navigateToDetails: Bool = false
+
     private var book: Book
-    private var onClick: (_ book: Book) -> Void
     private var onRemove: (_ book: Book, _ isLiked: Bool) -> Void
     private var randomPrompt: Prompt
     
@@ -24,11 +24,9 @@ struct BookCard: View {
     
     init(
         book: Book,
-        onClick: @escaping (_ book: Book) -> Void,
         onRemove: @escaping (_ book: Book, _ isLiked: Bool) -> Void
     ) {
         self.book = book
-        self.onClick = onClick
         self.onRemove = onRemove
         self.randomPrompt = book.prompts[book.featuredPromptIdx]
     }
@@ -40,7 +38,7 @@ struct BookCard: View {
     var body: some View {
         GeometryReader { geometry in
             VStack(alignment: .leading) {
-                
+
                 AsyncImage(
                     url: URL(string: book.imageURL),
                     content: { image in
@@ -52,50 +50,42 @@ struct BookCard: View {
                         ProgressView()
                     })
                 
-                HStack {
-                    VStack(alignment: .leading, spacing: 6) {
-                        Text(book.title)
-                            .font(.title)
-                            .bold()
-                            .foregroundColor(.black)
-                        Text(book.author)
+                VStack(alignment: .leading, spacing: 6) {
+                    Text(book.title)
+                        .font(.title)
+                        .bold()
+                    Text(book.author)
+                        .font(.subheadline)
+                    HStack {
+                        Image("pages")
+                            .resizable()
+                            .frame(width: 32.0, height: 32.0)
+                        Text(book.pageCount)
                             .font(.subheadline)
-                            .foregroundColor(.black)
-                        HStack {
-                            Image("pages")
-                                .resizable()
-                                .frame(width: 32.0, height: 32.0)
-                            Text(book.pageCount)
-                                .font(.subheadline)
-                                .foregroundColor(.gray)
-                            Image("category")
-                                .resizable()
-                                .frame(width: 32.0, height: 32.0)
-                            Text(book.category)
-                                .font(.subheadline)
                             .foregroundColor(.gray)
-                            Spacer()
-                        }
-                        VStack(alignment: .leading, spacing: 10) {
-                            Text(randomPrompt.question)
-                                .font(.title3)
-                                .fixedSize(horizontal: false, vertical: true)
-                                .foregroundColor(.black)
-                            Text(randomPrompt.answer)
-                                .font(.subheadline)
-                                .fixedSize(horizontal: false, vertical: true)
-                                .foregroundColor(.black)
-                            Spacer()
-                        }
-                        .padding(.top)
+                        Image("category")
+                            .resizable()
+                            .frame(width: 32.0, height: 32.0)
+                        Text(book.category)
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                        Spacer()
                     }
-                    .onTapGesture {
-                        onClick(book)
+                  
+                    VStack(alignment: .leading, spacing: 10) {
+                        Text(randomPrompt.question)
+                            .font(.title3)
+                            .fixedSize(horizontal: false, vertical: true)
+                        Text(randomPrompt.answer)
+                            .font(.subheadline)
+                            .fixedSize(horizontal: false, vertical: true)
+                        Spacer()
                     }
-                    
-                    Spacer()
+                    .padding(.top)
                 }
                 .padding(.horizontal)
+                
+                Spacer()
             }
             .padding(.bottom)
             .background(Color.white)
@@ -117,6 +107,12 @@ struct BookCard: View {
                         }
                     }
             )
+            .onTapGesture {
+                navigateToDetails = true
+            }
+            .sheet(isPresented: $navigateToDetails) {
+                BookDetailView(book: book)
+            }
         }
     }
 }
