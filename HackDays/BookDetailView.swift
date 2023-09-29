@@ -121,6 +121,7 @@ struct PromptView: View {
         VStack(alignment: .leading) {
             Text(prompt.question)
                 .font(.title3)
+                .foregroundColor(.black)
                 .fixedSize(horizontal: false, vertical: true)
             Text(prompt.answer)
                 .font(.subheadline)
