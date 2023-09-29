@@ -79,6 +79,23 @@ struct TutorialView: View {
                         }
                     }
             )
+            .onAppear {
+                withAnimation(.linear(duration: 0.25)) {
+                    translation = CGSize(width: 20, height: 100)
+                 }
+                 
+                withAnimation(.linear(duration: 0.25).delay(0.25)) { // Mark 2
+                     translation = .zero
+                 }
+                 
+                withAnimation(.linear(duration: 0.25).delay(0.5)) { // Mark 2
+                     translation = CGSize(width: -20, height: 100)
+                 }
+                 
+                withAnimation(.linear(duration: 0.25).delay(0.75)) { // Mark 2
+                    translation = .zero
+                }
+            }
             
         }
     }
