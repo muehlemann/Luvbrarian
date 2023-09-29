@@ -10,12 +10,47 @@ import SwiftUI
 struct MatchesView: View {
     @ObservedObject var viewModel = BookViewModel()
     var body: some View {
-        VStack(alignment: .leading) {
-            ForEach(viewModel.getLikedBooks(), id: \.id) { book in
-                Group {
-                    MatchView(book: book)
+        ScrollView {
+            VStack(alignment: .leading) {
+                let likedBooks = viewModel.getLikedBooks()
+                
+                // MATCHES COUNT
+                HStack {
+                    Text("Your Matches")
+                    
+                    Circle().fill(.bookBubRed)
+                        .frame(width: 20, height: 20)
+                        .overlay {
+                            Text("\(likedBooks.count)")
+                                .font(.caption)
+                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                                .clipShape(ContainerRelativeShape())
+                                .foregroundColor(.white)
+                        }
+                    
+                }
+                .padding([.leading, .bottom], 10)
+                .fontWeight(.medium)
+                .foregroundColor(.bookBubRed)
+                
+                Spacer()
+                
+                ForEach(likedBooks, id: \.id) { book in
+                    Group {
+                        Link(destination: URL(string: book.bookbubURL)!) {
+                            MatchView(book: book)
+                                .frame(minHeight: 80)
+                        }
+                        .accentColor(.black)
+                        .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                        
+                        Divider()
+                            .frame(height: 1)
+                            .background(Color.lightGray)
+                    }
                 }
             }
         }
+        .padding()
     }
 }
