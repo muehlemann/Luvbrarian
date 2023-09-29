@@ -107,7 +107,7 @@ struct BookDetailView: View {
                             VStack() {
                                 Link("View on BookBub", destination: bookbubURL)
                                     .padding()
-                                    .background(Color.red)
+                                    .background(Color.bookBubRed)
                                     .foregroundColor(Color.white)
                                     .cornerRadius(10)
                             }

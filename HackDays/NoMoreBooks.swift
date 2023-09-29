@@ -19,7 +19,7 @@ struct NoMoreBooks: View {
             Link("Visit BookBub for more great books!",
                  destination: URL(string: "https://www.bookbub.com")!)
             .padding()
-            .background(Color.red)
+            .background(Color.bookBubRed)
             .cornerRadius(10)
             .foregroundColor(Color.white)
             Spacer()
