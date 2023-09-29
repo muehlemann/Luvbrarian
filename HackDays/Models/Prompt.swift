@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Prompt {
+struct Prompt: Codable {
     var question: String
     var answer: String
 }
