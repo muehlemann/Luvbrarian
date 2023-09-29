@@ -10,7 +10,6 @@
 		0A1626E22AC5E96100F5B68F /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1626E12AC5E96100F5B68F /* BookViewModel.swift */; };
 		0A1626E42AC5EB5C00F5B68F /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1626E32AC5EB5C00F5B68F /* SwipeView.swift */; };
 		0A1626E62AC5EC2700F5B68F /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1626E52AC5EC2700F5B68F /* BookDetailView.swift */; };
-		0A1626E92AC5F62400F5B68F /* View+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1626E82AC5F62400F5B68F /* View+Navigation.swift */; };
 		0A1626ED2AC6136C00F5B68F /* BookViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1626EC2AC6136C00F5B68F /* BookViews.swift */; };
 		0A1D71E82AC5C1B7004D76AE /* HackDaysApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D71E72AC5C1B7004D76AE /* HackDaysApp.swift */; };
 		0A1D71EA2AC5C1B7004D76AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D71E92AC5C1B7004D76AE /* ContentView.swift */; };
@@ -48,7 +47,6 @@
 		0A1626E12AC5E96100F5B68F /* BookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewModel.swift; sourceTree = "<group>"; };
 		0A1626E32AC5EB5C00F5B68F /* SwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
 		0A1626E52AC5EC2700F5B68F /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
-		0A1626E82AC5F62400F5B68F /* View+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Navigation.swift"; sourceTree = "<group>"; };
 		0A1626EC2AC6136C00F5B68F /* BookViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViews.swift; sourceTree = "<group>"; };
 		0A1D71E42AC5C1B7004D76AE /* HackDays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackDays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A1D71E72AC5C1B7004D76AE /* HackDaysApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackDaysApp.swift; sourceTree = "<group>"; };
@@ -102,14 +100,6 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		0A1626E72AC5F61800F5B68F /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				0A1626E82AC5F62400F5B68F /* View+Navigation.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		0A1D71DB2AC5C1B7004D76AE = {
 			isa = PBXGroup;
 			children = (
@@ -133,7 +123,6 @@
 		0A1D71E62AC5C1B7004D76AE /* HackDays */ = {
 			isa = PBXGroup;
 			children = (
-				0A1626E72AC5F61800F5B68F /* Extensions */,
 				0A1626E02AC5E95800F5B68F /* ViewModels */,
 				0A1D72142AC5C921004D76AE /* Models */,
 				0A1D71E72AC5C1B7004D76AE /* HackDaysApp.swift */,
@@ -328,7 +317,6 @@
 				0A1626ED2AC6136C00F5B68F /* BookViews.swift in Sources */,
 				0A1626E22AC5E96100F5B68F /* BookViewModel.swift in Sources */,
 				557065CC2AC6269300FEB4CD /* NoMoreBooks.swift in Sources */,
-				0A1626E92AC5F62400F5B68F /* View+Navigation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +489,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -538,6 +527,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
