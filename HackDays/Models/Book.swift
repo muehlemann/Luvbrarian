@@ -16,7 +16,7 @@ struct Book {
     var pageCount: String
     var category: String
     var imageURL: String
-    var review: Float
+    var rating: Float
     var prompts: Array<Prompt>
     var featuredPromptIdx: Int
 }

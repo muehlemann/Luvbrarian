@@ -45,7 +45,7 @@ class BookViewModel: ObservableObject{
                pageCount: "400",
                category: "Humor, Fantasy",
                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1560177843/pro_pbid_4196314.jpg",
-               review: 5.0,
+               rating: 5.0,
                prompts: [
                    Prompt(question: "First round is on me if…",
                           answer: "We prevent the apocalypse together"),
@@ -59,11 +59,14 @@ class BookViewModel: ObservableObject{
                id: "1",
                author: "Ben McKenzie",
                title: "Easy Money",
-               description: "",
+               description: """
+               At the height of the pandemic, TV star Ben McKenzie was the perfect mark for cryptocurrency: a dad stuck at home with some cash in his pocket, worried about his family, armed with only the vague notion that people were making heaps of money on something he--despite a degree in economics--didn’t entirely understand. Lured in by grandiose, utopian promises, and sure, a little bit of FOMO, McKenzie dove deep into blockchain, Bitcoin, and the various other coins and exchanges on which they are traded. But after scratching the surface, he had to ask, “Am I crazy, or is this all a total scam?”\n
+               In Easy Money, McKenzie enlists the help of journalist Jacob Silverman for an investigative adventure into crypto and its remarkable crash. Weaving together stories of average traders and victims, colorful crypto “visionaries,” Hollywood’s biggest true believers, anti-crypto whistleblowers, and government operatives, Easy Money is an on-the-ground look at a perfect storm of irresponsibility and criminal fraud. Based on original reporting across the country and abroad, including interviews with Sam Bankman-Fried, Tether cofounder Brock Pierce, Celsius’s Alex Mashinsky, and more, this is the book on cryptocurrency you’ve been waiting for.
+               """,
                pageCount: "304",
                category: "Nonfiction",
                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1690564196/pro_pbid_5123562.jpg",
-               review: 0.0,
+               rating: 2.2,
                prompts: [
                    Prompt(question: "Red flags I look for...",
                           answer: "Investing in cryptocurrencies"),
@@ -86,7 +89,7 @@ class BookViewModel: ObservableObject{
                pageCount: "256",
                category: "Horror, Thriller",
                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_2,c_scale,w_405/v1686161939/pro_pbid_4754667.jpg",
-               review: 4.1,
+               rating: 4.1,
                prompts: [
                    Prompt(question: "My beige flag is…",
                           answer: "That I choose to run away into the forest when I’m scared, despite every horror movie I’ve ever seen."),
@@ -109,7 +112,7 @@ class BookViewModel: ObservableObject{
                pageCount: "314",
                category: "Memoir",
                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_2,c_scale,w_405/v1689632693/pro_pbid_4948915.jpg",
-               review: 4.7,
+               rating: 4.7,
                prompts: [
                    Prompt(question: "You should leave a comment if…",
                           answer: "You have childhood trauma!"),
@@ -131,7 +134,7 @@ class BookViewModel: ObservableObject{
                pageCount: "403",
                category: "Satire, Historical Fiction, Political Fiction",
                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1646751717/pro_pbid_4875402.jpg",
-               review: 4.2,
+               rating: 4.2,
                prompts: [
                    Prompt(question: "This year I really wanted to…",
                           answer: "Overthrow the government, but my mom wouldn’t let me :("),
@@ -154,7 +157,7 @@ class BookViewModel: ObservableObject{
                pageCount: "279",
                category: "Romance",
                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1655915297/pro_pbid_4941429.jpg",
-               review: 3.9,
+               rating: 3.9,
                prompts: [
                    Prompt(question: "Green flags I look for…",
                           answer: "You are my boyfriend’s dad and also a little bisexual."),
@@ -174,7 +177,7 @@ class BookViewModel: ObservableObject{
                pageCount: "791 across 4 books",
                category: "Fantasy, YA",
                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_2,c_scale,w_405/v1515394408/pro_pbid_805749.jpg",
-               review: 4.7,
+               rating: 4.7,
                prompts: [
                    Prompt(question: "You should leave a comment if…",
                           answer: "Your psyche was altered by books you read when you were 10"),
@@ -196,7 +199,7 @@ class BookViewModel: ObservableObject{
                 pageCount: "496",
                 category: "Fantasy",
                 imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_2,c_scale,w_405/v1676562526/pro_pbid_5088914.jpg",
-                review: 4.7,
+                rating: 4.7,
                 prompts: [
                     Prompt(question: "The best way to ask me out is by…",
                            answer: "Proposing! Don’t worry about it, it’s a religious upbringing thing."),
