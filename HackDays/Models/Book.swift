@@ -19,4 +19,5 @@ struct Book {
     var rating: Float
     var prompts: Array<Prompt>
     var featuredPromptIdx: Int
+    var bookbubURL: String
 }

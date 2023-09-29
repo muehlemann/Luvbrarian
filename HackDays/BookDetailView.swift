@@ -91,6 +91,20 @@ struct BookDetailView: View {
                                 PromptView(prompt: prompt)
                             }
                         }
+                        
+                        // VIEW ON BB CTA
+                        if let bookbubURL = URL(string: book.bookbubURL) {
+                            VStack() {
+                                Link("View on BookBub", destination: bookbubURL)
+                                    .padding()
+                                    .background(Color.red)
+                                    .foregroundColor(Color.white)
+                                    .cornerRadius(10)
+                            }
+                            .frame(maxWidth: geometry.size.width)
+                            .padding(.vertical, 50)
+                        }
+                        
                     }
                     .padding(.horizontal)
                 }
