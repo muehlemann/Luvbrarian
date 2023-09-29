@@ -7,32 +7,22 @@
 
 import SwiftUI
 
+enum Page: Int {
+    case matches, books, none
+}
+
 struct ContentView: View {
     @State private var page = Page.books
 
-    private enum Page: Int {
-        case matches, books, none
-    }
-
     var body: some View {
-        if (page == .matches) {
-            VStack {
+        VStack {
+            if (page == .matches) {
                 MatchesView()
-                NavbarView(
-                    onBookClick: { Page in page = .books},
-                    onMatchesClick: { Page in page = .matches}
-                )
-            }
-        } else {
-            VStack {
+            } else {
                 SwipeView()
-                NavbarView(
-                    onBookClick: { Page in page = .books},
-                    onMatchesClick: { Page in page = .matches}
-                )
             }
+            
+            NavbarView(onPageClicked: { newPage in page = newPage })
         }
-        
-
     }
 }
