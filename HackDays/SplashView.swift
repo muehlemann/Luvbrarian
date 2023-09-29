@@ -16,10 +16,12 @@ struct SplashView: View {
             if self.isActive {
                 ContentView()
             } else {
-                Image("luvbrarian-splash")
+                Image("matchbook-splash")
                     .resizable()
                     .scaledToFill()
                     .ignoresSafeArea()
+                    .padding()
+                    .background(Color(red: 0.863, green: 0.235, blue: 0.190))
             }
         }
         .onAppear {
