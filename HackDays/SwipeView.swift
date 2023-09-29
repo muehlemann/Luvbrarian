@@ -17,10 +17,13 @@ struct SwipeView: View {
                     VStack(spacing: 24) {
                         ZStack {
                             NoMoreBooks()
-                            ForEach(viewModel.books, id: \.id) { book in
+                            
+                            let books = viewModel.books
+                            ForEach(0..<books.count, id: \.self) { index in
                                 Group {
                                     BookCard(
-                                        book: book,
+                                        book: books[index],
+                                        isFirst: index == 0,
                                         onRemove: { book, isLiked in
                                             viewModel.markBook(book: book, isLiked: isLiked)
                                             print("Swiped on \(book.title). Liked: \(isLiked)")

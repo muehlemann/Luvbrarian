@@ -7,26 +7,31 @@
 
 import SwiftUI
 
+public enum SwipeStatus {
+    case like, dislike, none
+}
+
 struct BookCard: View {
     @State private var offset: CGSize = .zero
     @State private var translation: CGSize = .zero
+    @State private var swipeStatus: SwipeStatus = .none
     @State private var navigateToDetails: Bool = false
 
     private var book: Book
+    private var isFirst: Bool
     private var onRemove: (_ book: Book, _ isLiked: Bool) -> Void
     private var randomPrompt: Prompt
     
     private var thresholdPercentage: CGFloat = 0.4
-    
-    private enum LikeDislike: Int {
-        case like, dislike, none
-    }
-    
+    private var swipeStatusPercentage: CGFloat = 0.03
+
     init(
         book: Book,
+        isFirst: Bool,
         onRemove: @escaping (_ book: Book, _ isLiked: Bool) -> Void
     ) {
         self.book = book
+        self.isFirst = isFirst
         self.onRemove = onRemove
         self.randomPrompt = book.prompts[book.featuredPromptIdx]
     }
@@ -53,6 +58,8 @@ struct BookCard: View {
                 .frame(width: geometry.size.width, height: geometry.size.height)
 
                 VStack {
+                    SwipeStatusView(swipeStatus: swipeStatus)
+                    
                     Spacer()
                     
                     VStack(alignment: .leading, spacing: 6) {
@@ -91,7 +98,7 @@ struct BookCard: View {
             }
             .background(Color.white)
             .cornerRadius(10)
-            .shadow(radius: 5)
+            .shadow(radius: isFirst ? 5 : 0)
             .animation(.interactiveSpring(), value: offset)
             .offset(x: translation.width, y: 0)
             .rotationEffect(.degrees(Double(translation.width / geometry.size.width) * 25), anchor: .bottom)
@@ -99,13 +106,29 @@ struct BookCard: View {
                 DragGesture()
                     .onChanged { value in
                         translation = value.translation
+                        
+                        let gesturePercentage = getGesturePercentage(geometry, from: value)
+                        print(gesturePercentage)
+
+                        withAnimation(Animation.spring()) {
+                            if (gesturePercentage >= swipeStatusPercentage) {
+                                swipeStatus = .like
+                            } else if (gesturePercentage <= -swipeStatusPercentage) {
+                                swipeStatus = .dislike
+                            } else {
+                                swipeStatus = .none
+                            }
+                        }
+                        
                     }.onEnded { value in
-                        let gestureDirection = getGesturePercentage(geometry, from: value)
-                        if abs(gestureDirection) > thresholdPercentage {
-                            onRemove(book, gestureDirection > 0)
+                        let gesturePercentage = getGesturePercentage(geometry, from: value)
+                        if abs(gesturePercentage) > thresholdPercentage {
+                            onRemove(book, gesturePercentage > 0)
                         } else {
                             translation = .zero
                         }
+                        
+                        swipeStatus = .none
                     }
             )
             .onTapGesture {
@@ -113,6 +136,44 @@ struct BookCard: View {
             }
             .sheet(isPresented: $navigateToDetails) {
                 BookDetailView(book: book)
+            }
+        }
+    }
+}
+
+struct SwipeStatusView: View {
+    var swipeStatus: SwipeStatus
+    
+    init(swipeStatus: SwipeStatus) {
+        self.swipeStatus = swipeStatus
+        
+        print("MMDB")
+    }
+    
+    var body: some View {
+        HStack {
+            switch (swipeStatus) {
+            case .like:
+                Image("like")
+                    .resizable()
+                    .frame(width: 60.0, height: 60.0)
+                    .rotationEffect(Angle.degrees(-15))
+                    .shadow(color: .black, radius: 10)
+                    .padding(20)
+
+                Spacer()
+            case .dislike:
+                Spacer()
+                
+                Image("dislike")
+                    .resizable()
+                    .frame(width: 60.0, height: 60.0)
+                    .rotationEffect(Angle.degrees(15))
+                    .shadow(color: .black, radius: 10)
+                    .padding(20)
+
+            default:
+                EmptyView()
             }
         }
     }
