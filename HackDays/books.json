@@ -310,5 +310,31 @@
         ],
         "featuredPromptIdx": 0,
         "bookbubURL": "https://www.bookbub.com/books/the-alchemist-by-paulo-coelho"
+    },
+    {
+        "id": "12",
+        "author": "Sequoia Nagamatsu",
+        "title": "How High We Go In The Dark",
+        "description": "A special 25th anniversary edition of the extraordinary international bestseller, including a new Foreword by Paulo Coelho.\n\nCombining magic, mysticism, wisdom and wonder into an inspiring tale of self-discovery, The Alchemist has become a modern classic, sellimillions of copies around the world and transforming the lives of countless readers across generations.\n\nPaulo Coelho's masterpiece tells the mystical story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldtreasure. His quest will lead him to riches far different—and far more satisfying—than he ever imagined. Santiago's journey teaches us abothe essential wisdom of listening to our hearts, of recognizing opportunity and learning to read the omens strewn along life's path, amost  importantly, to follow our dreams.",
+        "pageCount": "292 pages",
+        "category": "Sci-fi, Literary Fiction",
+        "imageURL": "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_2,c_scale,w_405/v1670132187/pro_pbid_4828196.jpg",
+        "rating": 4.2,
+        "prompts": [
+            {
+                "question": "Together we could...",
+                "answer": "Go off into outer space and look for a new planet to replace the one we ruined."
+            },
+            {
+                "question": "I’m looking for…",
+                "answer": "Another delulu girly to help me survive this crazy death-filled world we live in."
+            },
+            {
+                "question": "This year, I really want to...",
+                "answer": "Get a new job. I’m tired of running the assisted suicide roller coaster."
+            }
+        ],
+        "featuredPromptIdx": 0,
+        "bookbubURL": "https://www.bookbub.com/books/how-high-we-go-in-the-dark-by-sequoia-nagamatsu"
     }
 ]
