@@ -109,7 +109,7 @@ struct BookCard: View {
                 DragGesture()
                     .onChanged { value in
                         translation = value.translation
-                        
+                                                
                         let gesturePercentage = getGesturePercentage(geometry, from: value)
                         withAnimation(Animation.spring()) {
                             if (gesturePercentage >= swipeStatusPercentage) {
@@ -122,10 +122,16 @@ struct BookCard: View {
                         }
                         
                     }.onEnded { value in
-                        let gesturePercentage = getGesturePercentage(geometry, from: value)
-                        if abs(gesturePercentage) > thresholdPercentage {
-                            onRemove(book, gesturePercentage > 0)
+                        if abs(value.translation.width) > abs(value.translation.height) {
+                            let gesturePercentage = getGesturePercentage(geometry, from: value)
+                            if abs(gesturePercentage) > thresholdPercentage {
+                                onRemove(book, gesturePercentage > 0)
+                            } else {
+                                translation = .zero
+                            }
                         } else {
+                            navigateToDetails = true
+                            
                             translation = .zero
                         }
                         
