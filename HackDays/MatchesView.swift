@@ -30,10 +30,11 @@ struct MatchesView: View {
                     })
 
 
-                Text("You don't have any matches. Swipe on more books to make Bub happy!")
+                Text("You don't have any matches.\nSwipe on more books to make Bub happy!")
                     .font(.subheadline)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .frame(maxWidth: 300)
                     .multilineTextAlignment(.center)
-                    .padding(.horizontal, 20)
                 
                 Spacer()
             }
