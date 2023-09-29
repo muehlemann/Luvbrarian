@@ -46,7 +46,7 @@ class BookViewModel: ObservableObject{
     }
         
         
-    func parse(jsonData: Data) -> [Book]? {
+    private func parse(jsonData: Data) -> [Book]? {
         do {
             let decodedData = try JSONDecoder().decode([Book].self, from: jsonData)
             return decodedData
@@ -56,7 +56,7 @@ class BookViewModel: ObservableObject{
         return nil
     }
     
-    func readLocalJSONFile(forName name: String) -> Data? {
+    private func readLocalJSONFile(forName name: String) -> Data? {
         do {
             if let filePath = Bundle.main.path(forResource: name, ofType: "json") {
                 let fileUrl = URL(fileURLWithPath: filePath)
