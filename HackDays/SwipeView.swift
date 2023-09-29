@@ -30,6 +30,7 @@ struct SwipeView: View {
                                         })
                                 }
                             }
+                            TutorialView()
                         }
                     }
                     Spacer()

@@ -21,7 +21,7 @@ struct SplashView: View {
                     .scaledToFill()
                     .ignoresSafeArea()
                     .padding()
-                    .background(Color(red: 0.863, green: 0.235, blue: 0.190))
+                    .background(Color("BookBubRed"))
             }
         }
         .onAppear {
