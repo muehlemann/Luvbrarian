@@ -35,7 +35,9 @@ struct MatchView: View {
                         ProgressView()
                     })
                     .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                    .shadow(radius: 5)
+                    .overlay {
+                        Circle().stroke(Color.lightGray, lineWidth: 2)
+                    }
                     .padding(.leading, 10)
 
                 
@@ -64,7 +66,6 @@ struct MatchView: View {
                             }
                             .foregroundColor(.yellow)
                     }
-                    .padding(.bottom, 0)
 
                     // QUESTION
                     Text(book.prompts[book.featuredPromptIdx].question)
