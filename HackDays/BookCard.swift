@@ -111,8 +111,6 @@ struct BookCard: View {
                         translation = value.translation
                         
                         let gesturePercentage = getGesturePercentage(geometry, from: value)
-                        print(gesturePercentage)
-
                         withAnimation(Animation.spring()) {
                             if (gesturePercentage >= swipeStatusPercentage) {
                                 swipeStatus = .like
@@ -149,17 +147,16 @@ struct SwipeStatusView: View {
     
     init(swipeStatus: SwipeStatus) {
         self.swipeStatus = swipeStatus
-        
-        print("MMDB")
     }
     
     var body: some View {
         HStack {
             switch (swipeStatus) {
             case .like:
-                Image("like")
+                Image(systemName: "heart.circle")
                     .resizable()
                     .frame(width: 60.0, height: 60.0)
+                    .foregroundColor(Color.green)
                     .rotationEffect(Angle.degrees(-15))
                     .shadow(color: .black, radius: 10)
                     .padding(20)
@@ -168,9 +165,10 @@ struct SwipeStatusView: View {
             case .dislike:
                 Spacer()
                 
-                Image("dislike")
+                Image(systemName: "xmark.circle")
                     .resizable()
                     .frame(width: 60.0, height: 60.0)
+                    .foregroundColor(Color.red)
                     .rotationEffect(Angle.degrees(15))
                     .shadow(color: .black, radius: 10)
                     .padding(20)

@@ -18,7 +18,6 @@ struct BookDetailView: View {
     
     var body: some View {
         GeometryReader { geometry in
-
             ScrollView {
                 VStack(alignment: .leading) {
                     
@@ -49,9 +48,8 @@ struct BookDetailView: View {
                                 Image("rating")
                                     .resizable()
                                     .frame(width: 32.0, height: 32.0)
-                                Text("\(book.review)")
-                                    .font(.subheadline)
-                                    .foregroundColor(.gray)
+                                
+                                RatingView(rating: CGFloat(book.rating), maxRating: 5)
                                 Spacer()
                             }
                             HStack {
@@ -61,6 +59,7 @@ struct BookDetailView: View {
                                 Text(book.pageCount)
                                     .font(.subheadline)
                                     .foregroundColor(.gray)
+                                    .frame(height: 22)
                                 Spacer()
                             }
                             HStack {
@@ -70,6 +69,7 @@ struct BookDetailView: View {
                                 Text(book.category)
                                     .font(.subheadline)
                                     .foregroundColor(.gray)
+                                    .frame(height: 22)
                                 Spacer()
                             }
                         }
@@ -81,21 +81,9 @@ struct BookDetailView: View {
                         }
                         
                         // DESCRIPTION
-                        VStack(alignment: .leading) {
-                            Text("DESCRIPTION")
-                                .font(.subheadline)
-                                .foregroundColor(.black)
-                                .bold()
-                                .padding(EdgeInsets(top: 0, leading: 0, bottom: 4, trailing: 0))
-                            
-                            Text(book.description)
-                                .font(.footnote)
-                                .foregroundColor(.black)
+                        if !book.description.isEmpty {
+                            DescriptionView(description: book.description)
                         }
-                        .padding()
-                        .background(.brown.opacity(0.15))
-                        .cornerRadius(10)
-                        .padding(.top)
                         
                         // OTHER PROMPTS
                         VStack(alignment: .leading) {
@@ -106,23 +94,73 @@ struct BookDetailView: View {
                     }
                     .padding(.horizontal)
                 }
+                .padding(.bottom, 50)
             }
-            .padding(.bottom)
             .background(Color.white)
+            .edgesIgnoringSafeArea(.vertical)
         }
     }
 }
 
-struct PromptView: View {
+struct DescriptionView: View {
+    var description: String
     
+    @State var isExpanded = false
+
+    var body: some View {
+        VStack(alignment: .leading) {
+            Text("DESCRIPTION")
+                .font(.subheadline)
+                .bold()
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: 4, trailing: 0))
+            
+            Text(description)
+                .animation(.easeOut(duration: 1), value: false)
+                .font(.footnote)
+                .foregroundColor(.black)
+                .lineLimit(isExpanded ? nil : 5)
+                .truncationMode(.tail)
+            
+
+            Text("Read \(isExpanded ? "less" : "more")").onTapGesture {
+                withAnimation(Animation.spring().speed(1.5)) {
+                    isExpanded.toggle()
+                }
+            }
+            .font(.footnote)
+            .foregroundColor(.black)
+            .underline()
+            .padding(.top, 2)
+        }
+        .padding()
+        .background(.brown.opacity(0.15))
+        .cornerRadius(10)
+        .padding(.top)
+    }
+}
+
+struct PromptView: View {
     var prompt: Prompt
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(prompt.question)
-                .font(.title3)
-                .foregroundColor(.black)
-                .fixedSize(horizontal: false, vertical: true)
+            HStack {
+                Image(systemName: "questionmark.circle")
+                    .resizable()
+                    .frame(width: 18, height: 18)
+                    .aspectRatio(contentMode: .fit)
+                    .padding(9)
+                    .background(
+                        Circle().foregroundColor(Color.brown.opacity(0.2))
+                    )
+                
+                Text(prompt.question.uppercased())
+                    .font(.subheadline)
+                    .foregroundColor(.black)
+                    .bold()
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+            
             Text(prompt.answer)
                 .font(.subheadline)
                 .fixedSize(horizontal: false, vertical: true)
@@ -131,6 +169,54 @@ struct PromptView: View {
             Spacer()
         }
         .padding(.top)
+    }
+}
+
+struct RatingView: View {
+    var rating: CGFloat
+    var maxRating: Int
+    
+    @State var isStarView = true
+
+    var body: some View {
+        ZStack {
+            if (isStarView) {
+                let stars =  HStack(spacing: 4) {
+                    ForEach(0..<maxRating, id: \.self) { _ in
+                        Image(systemName: "star.fill")
+                            .resizable()
+                            .frame(width: 18, height: 18)
+                            .aspectRatio(contentMode: .fit)
+                    }
+                }
+                
+                stars.overlay(
+                    GeometryReader { g in
+                        let width = rating / CGFloat(maxRating) * g.size.width
+                        ZStack(alignment: .leading) {
+                            Rectangle()
+                                .frame(width: width)
+                                .foregroundColor(.yellow)
+                        }
+                    }
+                        .mask(stars)
+                )
+                .foregroundColor(.gray)
+                .frame(height: 22)
+            } else {
+                let formattedRating = String(format: "%.1f", Double(rating))
+                let formattedMaximun = String(format: "%.1f", Double(maxRating))
+                HStack(spacing: 4) {
+                    Text("\(formattedRating)/\(formattedMaximun)")
+                        .font(.subheadline)
+                        .foregroundColor(.gray)
+                        .frame(height: 22)
+                }
+            }
+        }
+        .onTapGesture {
+            isStarView.toggle()
+        }
     }
 }
 
