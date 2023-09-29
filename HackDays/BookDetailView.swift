@@ -34,11 +34,13 @@ struct BookDetailView: View {
                         VStack(alignment: .leading) {
                             Text(book.title)
                                 .font(.title)
+                                .foregroundColor(.black)
                                 .bold()
                                 .padding(.top)
                             
                             Text(book.author)
                                 .font(.subheadline)
+                                .foregroundColor(.black)
                         }.padding(.top)
                             
                         // METADATA
@@ -82,11 +84,13 @@ struct BookDetailView: View {
                         VStack(alignment: .leading) {
                             Text("DESCRIPTION")
                                 .font(.subheadline)
+                                .foregroundColor(.black)
                                 .bold()
                                 .padding(EdgeInsets(top: 0, leading: 0, bottom: 4, trailing: 0))
                             
                             Text(book.description)
                                 .font(.footnote)
+                                .foregroundColor(.black)
                         }
                         .padding()
                         .background(.brown.opacity(0.15))
