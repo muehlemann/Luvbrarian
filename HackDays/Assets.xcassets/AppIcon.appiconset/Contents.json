@@ -1,67 +1,67 @@
 {
   "images" : [
     {
-      "filename" : "luvbrarian.png",
+      "filename" : "matchbook1024.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
     },
     {
-      "filename" : "luvbrarian16.png",
+      "filename" : "matchbook16.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "16x16"
     },
     {
-      "filename" : "luvbrarian32 1.png",
+      "filename" : "matchbook32.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "16x16"
     },
     {
-      "filename" : "luvbrarian32.png",
+      "filename" : "matchbook32 1.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "32x32"
     },
     {
-      "filename" : "luvbrarian64.png",
+      "filename" : "matchbook64.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "32x32"
     },
     {
-      "filename" : "luvbrarian128.png",
+      "filename" : "matchbook128.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "128x128"
     },
     {
-      "filename" : "luvbrarian256 1.png",
+      "filename" : "matchbook256.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "128x128"
     },
     {
-      "filename" : "luvbrarian256.png",
+      "filename" : "matchbook256 1.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "256x256"
     },
     {
-      "filename" : "luvbrarian512 1.png",
+      "filename" : "matchbook512.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "256x256"
     },
     {
-      "filename" : "luvbrarian512.png",
+      "filename" : "matchbook512 1.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "512x512"
     },
     {
-      "filename" : "luvbrarian 1.png",
+      "filename" : "matchbook1024 1.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "512x512"
