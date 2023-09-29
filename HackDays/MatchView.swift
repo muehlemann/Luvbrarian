@@ -18,69 +18,46 @@ struct MatchView: View {
     }
 
     var body: some View {
-        GeometryReader { geometry in
-            HStack {
-                // COVER IMAGE
-                AsyncImage(
-                    url: URL(string: book.imageURL),
-                    content: { image in
-                        image.resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(
-                                maxWidth: 64,
-                                maxHeight: 64
-                            )
-                    },
-                    placeholder: {
-                        ProgressView()
-                    })
-                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                    .overlay {
-                        Circle().stroke(Color("LightGray"), lineWidth: 2)
-                    }
-                    .padding(.leading, 10)
+        HStack(alignment: .top) {
+            // COVER IMAGE
+            AsyncImage(
+                url: URL(string: book.imageURL),
+                content: { image in
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 80, height: 120)
+                        .shadow(radius: 5)
 
-                
-                VStack(alignment: .leading) {
-                    // BOOK TITLE AND RATING
-                    HStack {
-                        Text(book.title)
-                            .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
-                            .font(.headline)
-                        
-                        Spacer()
-                        
-                        let rating = String(format: "%.1f", Double(book.rating))
-                        
-                        Image(systemName: "star.fill")
-                            .resizable()
-                            .frame(width: 40, height: 40)
-                            .aspectRatio(contentMode: .fit)
-                            .overlay {
-                                Text(rating)
-                                    .font(.caption2)
-                                    .scaledToFit()
-                                    .fontWeight(.semibold)
-                                    .clipShape(ContainerRelativeShape())
-                                    .foregroundColor(.black)
-                            }
-                            .foregroundColor(.yellow)
-                    }
-
-                    // QUESTION
-                    Text(book.prompts[book.featuredPromptIdx].question)
-                        .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
-                        .font(.subheadline)
-                    // ANSWER
-                    Text(book.prompts[book.featuredPromptIdx].answer)
-                        .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
-                        .font(.footnote)
-                        .foregroundColor(.gray.opacity(0.8))
-
+                },
+                placeholder: {
+                    ProgressView()
                 }
-                .padding(.leading, 20)
+            )
+            .padding(.trailing)
+            
+            VStack(alignment: .leading) {
+                // TITLE
+                Text(book.title)
+                    .font(.subheadline)
+                    .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                
+                // RAITING
+                RatingView(rating: CGFloat(book.rating), maxRating: 5)
+
+                // QUESTION
+                Text(book.prompts[book.featuredPromptIdx].question)
+                    .font(.subheadline)
+                    .multilineTextAlignment(.leading)
+                
+                // ANSWER
+                Text(book.prompts[book.featuredPromptIdx].answer)
+                    .font(.footnote)
+                    .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(.gray.opacity(0.8))
+
             }
-            .frame(maxHeight: 100)
         }
+        .padding()
     }
 }
