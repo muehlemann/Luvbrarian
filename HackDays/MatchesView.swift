@@ -46,7 +46,7 @@ struct MatchesView: View {
                         
                         Divider()
                             .frame(height: 1)
-                            .background(Color("LightGrey"))
+                            .background(Color("LightGray"))
                     }
                 }
             }
