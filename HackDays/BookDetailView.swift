@@ -21,12 +21,16 @@ struct BookDetailView: View {
             ScrollView {
                 VStack(alignment: .leading) {
                     
-                    BookImage(
-                        book: book,
-                        geometry: geometry,
-                        percentage: 0.75, 
-                        contentMode: .fill
-                    )
+                    VStack {
+                        BookImage(
+                            book: book,
+                            geometry: geometry,
+                            percentage: 0.75,
+                            contentMode: .fill
+                        )
+                    }
+                    .frame(width: geometry.size.width)
+                    .background(Color.gray.opacity(0.5))
                     
                     VStack(alignment: .leading, spacing: 6) {
                         // TITLE

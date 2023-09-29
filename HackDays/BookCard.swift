@@ -45,7 +45,6 @@ struct BookCard: View {
             ZStack(alignment: .leading) {
 
                 VStack {
-                    
                     BookImage(
                         book: book,
                         geometry: geometry,
@@ -56,6 +55,7 @@ struct BookCard: View {
                     Spacer()
                 }
                 .frame(width: geometry.size.width, height: geometry.size.height)
+                .background(Color.gray.opacity(0.5))
 
                 VStack {
                     SwipeStatusView(swipeStatus: swipeStatus)

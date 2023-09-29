@@ -90,7 +90,7 @@ class BookViewModel: ObservableObject{
                 """,
                 pageCount: "256 pages",
                 category: "Horror, Thriller",
-                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_2,c_scale,w_405/v16861619pro_pbid_4754667.jpg",
+                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1686161939/pro_pbid_4754667.jpg",
                 rating: 4.1,
                 prompts: [
                     Prompt(question: "My beige flag is…",
@@ -114,7 +114,7 @@ class BookViewModel: ObservableObject{
                 """,
                 pageCount: "314 pages",
                 category: "Memoir",
-                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_2,c_scale,w_405/v16896326pro_pbid_4948915.jpg",
+                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1689632693/pro_pbid_4948915.jpg",
                 rating: 4.7,
                 prompts: [
                     Prompt(question: "You should leave a comment if…",
@@ -182,7 +182,7 @@ class BookViewModel: ObservableObject{
                 """,
                 pageCount: "791 pages across 4 books",
                 category: "Fantasy, YA",
-                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_2,c_scale,w_405/v1515394pro_pbid_805749.jpg",
+                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1515394408/pro_pbid_805749.jpg",
                 rating: 4.7,
                 prompts: [
                     Prompt(question: "You should leave a comment if…",
@@ -205,7 +205,7 @@ class BookViewModel: ObservableObject{
                  """,
                  pageCount: "496 pages",
                  category: "Fantasy",
-                 imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_2,c_scale,w_405/v16765625pro_pbid_5088914.jpg",
+                 imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1676562526/pro_pbid_5088914.jpg",
                  rating: 4.7,
                  prompts: [
                      Prompt(question: "The best way to ask me out is by…",
@@ -226,7 +226,7 @@ class BookViewModel: ObservableObject{
                  """,
                  pageCount: "304 pages",
                  category: "Fantasy",
-                 imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_2,c_scale,w_405/v14859697pro_pbid_468894.jpg",
+                 imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1485969717/pro_pbid_468894.jpg",
                  rating: 4.54,
                  prompts: [
                      Prompt(question: "This Year I Really Want To…",
@@ -247,7 +247,7 @@ class BookViewModel: ObservableObject{
                  """,
                  pageCount: "384 pages",
                  category: "Thriller",
-                 imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_2,c_scale,w_405/v16594726pro_pbid_4883019.jpg",
+                 imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1659472692/pro_pbid_4883019.jpg",
                  rating: 4.8,
                  prompts: [
                      Prompt(question: "First round is on me…",
@@ -269,7 +269,7 @@ class BookViewModel: ObservableObject{
                  """,
                  pageCount: "147 pages",
                  category: "Sci-fi",
-                 imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_2,c_scale,w_405/v16627425pro_pbid_4691301.jpg",
+                 imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1662742543/pro_pbid_4691301.jpg",
                  rating: 5.0,
                  prompts: [
                      Prompt(question: "Green flags I look for…",

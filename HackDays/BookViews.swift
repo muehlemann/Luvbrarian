@@ -26,6 +26,8 @@ struct BookImage: View {
             },
             placeholder: {
                 ProgressView()
-            })
+                    .padding(.vertical, 200)
+            }
+        )
     }
 }
