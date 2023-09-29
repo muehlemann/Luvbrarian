@@ -18,7 +18,7 @@ struct MatchesView: View {
                 HStack {
                     Text("Your Matches")
                     
-                    Circle().fill(.bookBubRed)
+                    Circle().fill(Color("BookBubRed"))
                         .frame(width: 20, height: 20)
                         .overlay {
                             Text("\(likedBooks.count)")
@@ -31,7 +31,7 @@ struct MatchesView: View {
                 }
                 .padding([.leading, .bottom], 10)
                 .fontWeight(.medium)
-                .foregroundColor(.bookBubRed)
+                .foregroundColor(Color("BookBubRed"))
                 
                 Spacer()
                 
@@ -46,7 +46,7 @@ struct MatchesView: View {
                         
                         Divider()
                             .frame(height: 1)
-                            .background(Color.lightGray)
+                            .background(Color("LightGrey"))
                     }
                 }
             }
