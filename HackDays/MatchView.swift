@@ -36,7 +36,7 @@ struct MatchView: View {
                     })
                     .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                     .overlay {
-                        Circle().stroke(Color.lightGray, lineWidth: 2)
+                        Circle().stroke(Color("LightGray"), lineWidth: 2)
                     }
                     .padding(.leading, 10)
 
