@@ -64,16 +64,17 @@ struct BookCard: View {
                     
                     VStack(alignment: .leading, spacing: 6) {
                         HStack {
-                            Image("pages")
-                                .resizable()
-                                .frame(width: 32.0, height: 32.0)
-                            Text(book.pageCount)
-                                .font(.subheadline)
-                                .foregroundColor(.gray)
                             Image("category")
                                 .resizable()
                                 .frame(width: 32.0, height: 32.0)
                             Text(book.category)
+                                .font(.subheadline)
+                                .foregroundColor(.gray)
+                            Spacer()
+                            Image("pages")
+                                .resizable()
+                                .frame(width: 32.0, height: 32.0)
+                            Text(book.pageCount)
                                 .font(.subheadline)
                                 .foregroundColor(.gray)
                             Spacer()
@@ -83,9 +84,11 @@ struct BookCard: View {
                             Text(randomPrompt.question)
                                 .font(.title3)
                                 .fixedSize(horizontal: false, vertical: true)
+                                .foregroundColor(.black)
                             Text(randomPrompt.answer)
                                 .font(.subheadline)
                                 .fixedSize(horizontal: false, vertical: true)
+                                .foregroundColor(.black)
                         }
                         .padding(.vertical)
                     }
