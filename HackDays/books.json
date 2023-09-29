@@ -1,5 +1,4 @@
-[
-    {
+[{
         "id": "0",
         "author": "Terry Pratchett, Neil Gaiman",
         "title": "Good Omens",
@@ -8,8 +7,7 @@
         "category": "Humor, Fantasy",
         "imageURL": "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1560177843/pro_pbid_4196314.jpg",
         "rating": 5.0,
-        "prompts": [
-            {
+        "prompts": [{
                 "question": "First round is on me if…",
                 "answer": "We prevent the apocalypse together"
             },
@@ -42,8 +40,7 @@
         "category": "Nonfiction",
         "imageURL": "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1690564196/pro_pbid_5123562.jpg",
         "rating": 2.2,
-        "prompts": [
-            {
+        "prompts": [{
                 "question": "Red flags I look for...",
                 "answer": "Investing in cryptocurrencies"
             },
@@ -76,8 +73,7 @@
         "category": "Horror, Thriller",
         "imageURL": "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1686161939/pro_pbid_4754667.jpg",
         "rating": 4.1,
-        "prompts": [
-            {
+        "prompts": [{
                 "question": "My beige flag is…",
                 "answer": "That I choose to run away into the forest when I'm scared, despite every horror movie I've ever seen."
             },
@@ -110,8 +106,7 @@
         "category": "Memoir",
         "imageURL": "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1689632693/pro_pbid_4948915.jpg",
         "rating": 4.7,
-        "prompts": [
-            {
+        "prompts": [{
                 "question": "You should leave a comment if…",
                 "answer": "You have childhood trauma!"
             },
@@ -144,8 +139,7 @@
         "category": "Satire, Historical Fiction, Political Fiction",
         "imageURL": "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1646751717/pro_pbid_4875402.jpg",
         "rating": 4.2,
-        "prompts": [
-            {
+        "prompts": [{
                 "question": "This year I really wanted to…",
                 "answer": "Overthrow the government, but my mom wouldn't let me :("
             },
@@ -178,8 +172,7 @@
         "category": "Romance",
         "imageURL": "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1655915297/pro_pbid_4941429.jpg",
         "rating": 3.9,
-        "prompts": [
-            {
+        "prompts": [{
                 "question": "Green flags I look for…",
                 "answer": "You are my boyfriend's dad and also a little bisexual."
             },
@@ -212,8 +205,7 @@
         "category": "Fantasy, YA",
         "imageURL": "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1515394408/pro_pbid_805749.jpg",
         "rating": 4.7,
-        "prompts": [
-            {
+        "prompts": [{
                 "question": "You should leave a comment if…",
                 "answer": "Your psyche was altered by books you read when you were 10"
             },
@@ -246,8 +238,7 @@
         "category": "Fantasy",
         "imageURL": "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1676562526/pro_pbid_5088914.jpg",
         "rating": 4.7,
-        "prompts": [
-            {
+        "prompts": [{
                 "question": "The best way to ask me out is by…",
                 "answer": "Proposing! Don't worry about it, it's a religious upbringing thing."
             },
@@ -280,8 +271,7 @@
         "category": "Fantasy",
         "imageURL": "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1485969717/pro_pbid_468894.jpg",
         "rating": 4.5,
-        "prompts": [
-            {
+        "prompts": [{
                 "question": "This Year I Really Want To…",
                 "answer": "Win the government run science fair while simultaneously overthrowing the government! 😅 "
             },
@@ -314,8 +304,7 @@
         "category": "Thriller",
         "imageURL": "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1659472692/pro_pbid_4883019.jpg",
         "rating": 4.8,
-        "prompts": [
-            {
+        "prompts": [{
                 "question": "First round is on me…",
                 "answer": "If you can catch me in my lambo 😛"
             },
@@ -348,8 +337,7 @@
         "category": "Sci-fi",
         "imageURL": "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1662742543/pro_pbid_4691301.jpg",
         "rating": 5.0,
-        "prompts": [
-            {
+        "prompts": [{
                 "question": "Green flags I look for…",
                 "answer": "You love tea, go to therapy, and can't wait to learn more about the world."
             },
@@ -382,8 +370,7 @@
         "category": "Fiction",
         "imageURL": "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_2,c_scale,w_405/v1607117530/pro_pbid_5218.jpg",
         "rating": 4.2,
-        "prompts": [
-            {
+        "prompts": [{
                 "question": "Did you touch my drum set?",
                 "answer": "I know you did because cops isn't on until 4"
             },
@@ -416,8 +403,7 @@
         "category": "Sci-fi, Literary Fiction",
         "imageURL": "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_2,c_scale,w_405/v1670132187/pro_pbid_4828196.jpg",
         "rating": 4.2,
-        "prompts": [
-            {
+        "prompts": [{
                 "question": "Together we could...",
                 "answer": "Go off into outer space and look for a new planet to replace the one we ruined."
             },
@@ -440,5 +426,266 @@
         },
         "featuredPromptIdx": 0,
         "bookbubURL": "https://www.bookbub.com/books/how-high-we-go-in-the-dark-by-sequoia-nagamatsu"
+    },
+    {
+        "id": "671579",
+        "author": "Grady Hendrix",
+        "title": "Horrorstör",
+        "description": "From the New York Times best-selling author of The Southern Book Club’s Guide to Slaying Vampires comes a hilarious and terrifying haunted house story in a thoroughly contemporary setting: a furniture superstore.Something strange is happening at the Orsk furniture superstore in Cleveland, Ohio. Every morning, employees arrive to find broken Kjerring bookshelves, shattered Glans water goblets, and smashed Liripip wardrobes. Sales are down, security cameras reveal nothing, and store managers are panicking. To unravel the mystery, three employees volunteer to work a nine-hour dusk-till-dawn shift. In the dead of the night, they’ll patrol the empty showroom floor, investigate strange sights and sounds, and encounter horrors that defy the imagination.",
+        "pageCount": "240 pages",
+        "category": "Horror",
+        "imageURL": "https://res.cloudinary.com/bookbub/image/upload/t_ci_new_browse_cover,f_auto,q_auto/v1502908393/pro_pbid_799170.jpg",
+        "rating": 3.9,
+        "prompts": [{
+                "question": "My most irrational fear…",
+                "answer": "Is Ikea. It’s impossible to find your way out…"
+            },
+            {
+                "question": "My love language is…",
+                "answer": "Hiding from prison ghosts, and maybe our fingertips brush while we hide under the Ikea dining table display."
+            },
+            {
+                "question": "I won’t shut about…",
+                "answer": "How a seance was the worst possible idea for an overnight shift."
+            }
+        ],
+        "featuredPromptIdx": 0,
+        "review": {
+            "text": "",
+            "reviewer": {
+                "name": "",
+                "age": 100,
+                "profession": ""
+            }
+        },
+        "bookbubURL": "https://www.bookbub.com/books/horrorstor-by-grady-hendrix"
+    },
+    {
+        "id": "3052823",
+        "author": "Deirdre Mask",
+        "title": "The Address Book",
+        "description": "Finalist for the 2020 Kirkus Prize for Nonfiction | One of Time Magazines’s 100 Must-Read Books of 2020 | Longlisted for the 2020 Porchlight Business Book Awards“An entertaining quest to trace the origins and implications of the names of the roads on which we reside.” —Sarah Vowell, The New York Times Book ReviewWhen most people think about street addresses, if they think of them at all, it is in their capacity to ensure that the postman can deliver mail or a traveler won’t get lost. But street addresses were not invented to help you find your way; they were created to find you. In many parts of the world, your address can reveal your race and class. In this wide-ranging and remarkable book, Deirdre Mask looks at the fate of streets named after Martin Luther King Jr., the wayfinding means of ancient Romans, and how Nazis haunt the streets of modern Germany. The flipside of having an address is not having one, and we also see what that means for millions of people today, including those who live in the slums of Kolkata and on the streets of London. Filled with fascinating people and histories, The Address Book illuminates the complex and sometimes hidden stories behind street names and their power to name, to hide, to decide who counts, who doesn’t—and why.",
+        "pageCount": "320 pages",
+        "category": "History",
+        "imageURL": "https://res.cloudinary.com/bookbub/image/upload/t_ci_new_browse_cover,f_auto,q_auto/v1667938436/pro_pbid_4381208.jpg",
+        "rating": 4.076923076923077,
+        "prompts": [{
+                "question": "I geek out on…",
+                "answer": "Clustering analyses to solve public health crises"
+            },
+            {
+                "question": "Best travel story…",
+                "answer": "The time I got completely lost in India while researching addresses."
+            },
+            {
+                "question": "Green flags I look for...",
+                "answer": "A willingness to rename racist streets"
+            }
+        ],
+        "featuredPromptIdx": 0,
+        "review": {
+            "text": "I had the privilege of reading this book, and I must say it was a transformative experience. The author's words resonated with me on a deeply personal level, and the characters felt like old friends. This book beautifully explores themes of identity, culture, and resilience, and it's a testament to the power of storytelling. I found this book to be both empowering and emotionally moving.",
+            "reviewer": {
+                "name": "Aisha Williams",
+                "age": 30,
+                "profession": "Social Worker"
+            }
+        },
+        "bookbubURL": "https://www.bookbub.com/books/the-address-book-by-deirdre-mask-2019-05-27"
+    },
+    {
+        "id": "3029510",
+        "author": "TJ Klune",
+        "title": "The House in the Cerulean Sea",
+        "description": "A NEW YORK TIMES, USA TODAY, and WASHINGTON POST BESTSELLER! A 2021 Alex Award winner! The 2021 RUSA Reading List: Fantasy Winner! An Indie Next Pick! One of Publishers Weekly’s “Most Anticipated Books of Spring 2020” One of Book Riot’s “20 Must-Read Feel-Good Fantasies”  Lambda Literary Award-winning author TJ Klune’s bestselling, breakout contemporary fantasy that’s “1984 meets The Umbrella Academy with a pinch of Douglas Adams thrown in.” (Gail Carriger)  Linus Baker is a by-the-book case worker in the Department in Charge of Magical Youth. He’s tasked with determining whether six dangerous magical children are likely to bring about the end of the world.  Arthur Parnassus is the master of the orphanage. He would do anything to keep the children safe, even if it means the world will burn. And his secrets will come to light.  The House in the Cerulean Sea is an enchanting love story, masterfully told, about the profound experience of discovering an unlikely family in an unexpected place--and realizing that family is yours.  “1984 meets The Umbrella Academy with a pinch of Douglas Adams thrown in.” --Gail Carriger, New York Times bestselling author of Soulless.",
+        "pageCount": "305 pages",
+        "category": "Fantasy",
+        "imageURL": "https://res.cloudinary.com/bookbub/image/upload/t_ci_new_browse_cover,f_auto,q_auto/v1611814181/pro_pbid_4358063.jpg",
+        "rating": 4.727095516569197,
+        "prompts": [{
+                "question": "The key to my heart is…",
+                "answer": "Orphans, like a truckload of magical orphans ideally"
+            },
+            {
+                "question": "My love language is…",
+                "answer": "Lingering glances at emotionally charged dinners and scalding hot physical touch"
+            },
+            {
+                "question": "My most irrational fear…",
+                "answer": "That my cat will leave me"
+            }
+        ],
+        "featuredPromptIdx": 0,
+        "review": {
+            "text": "I recently had the pleasure of reading 'The House in the Cerulean Sea,' and it's nothing short of enchanting. The author has created a whimsical and heartwarming world filled with unique characters and magical creatures. The story is a beautiful blend of fantasy, love, and acceptance. I found myself immersed in the tale, unable to put it down. The author's writing is both charming and thought-provoking. This book is a true gem and a must-read for anyone who believes in the power of kindness and the beauty of diversity.",
+            "reviewer": {
+                "name": "Eleanor Davis",
+                "age": 42,
+                "profession": "Art Therapist"
+            }
+        },
+        "bookbubURL": "https://www.bookbub.com/books/the-house-in-the-cerulean-sea-by-tj-klune"
+    },
+    {
+        "id": "2975526",
+        "author": "Jia Tolentino",
+        "title": "Trick Mirror",
+        "description": "A Times book of the year A Guardian book of the year ‘Magnificent’The Times ‘Dazzling’ New Statesman ‘It filled me with hope’ Zadie Smith We are living in the era of the self, in an era of malleable truth and widespread personal and political delusion. In these nine interlinked essays, Jia Tolentino, the New Yorker’s brightest young talent, explores her own coming of age in this warped and confusing landscape. From the rise of the internet to her own appearance on an early reality TV show; from her experiences of ecstasy - both religious and chemical - to her uneasy engagement with our culture’s endless drive towards ‘self-optimisation’; from the phenomenon of the successful American scammer to her generation’s obsession with extravagant weddings, Jia Tolentino writes with style, humour and a fierce clarity about these strangest of times. Following in the footsteps of American luminaries such as Susan Sontag, Joan Didion and Rebecca Solnit, yet with a voice and vision all her own, Jia Tolentino writes with a rare gift for elucidating nuance and complexity, coupled with a disarming warmth. This debut collection of her essays announces her exactly the sort of voice we need to hear from right now - and for many years to come.",
+        "pageCount": "306 pages",
+        "category": "Politics & Current Events",
+        "imageURL": "https://res.cloudinary.com/bookbub/image/upload/t_ci_new_browse_cover,f_auto,q_auto/v1592347283/pro_pbid_4304313.jpg",
+        "rating": 0,
+        "prompts": [{
+                "question": "The dorkiest thing about me is…",
+                "answer": "I was on an MTV reality show as a child. Yikes, embarrassing!"
+            },
+            {
+                "question": "I won’t shut up about…",
+                "answer": "Diet culture!!!! F that. And how all roads lead to capitalism."
+            },
+            {
+                "question": "I geek out on...",
+                "answer": "How scamming is the definitive millennial ethos."
+            }
+        ],
+        "featuredPromptIdx": 0,
+        "review": {
+            "text": "I recently delved into 'Trick Mirror,' and it was a thought-provoking journey into the complexities of contemporary culture and identity. Jia Tolentino's insights are both sharp and insightful, and her ability to dissect and analyze various aspects of our modern lives is commendable. This collection of essays is a mirror reflecting our society's quirks, contradictions, and illusions. It's a powerful and engaging read that leaves you pondering the world around you long after you've turned the last page.",
+            "reviewer": {
+                "name": "Sarah Jackson",
+                "age": 34,
+                "profession": "Journalist"
+            }
+        },
+        "bookbubURL": "https://www.bookbub.com/books/trick-mirror-by-jia-tolentino-2019-02-12"
+    },
+    {
+        "id": "3022036",
+        "author": "Adrian Tchaikovsky",
+        "title": "Children of Time",
+        "description": "Winner of the 30th anniversary Arthur C. Clarke Award for Best Novel.Adrian Tchaikovksy’s critically acclaimed, stand-alone novel Children of Time, is the epic story of humanity’s battle for survival on a terraformed planet.Who will inherit this new Earth? The last remnants of the human race left a dying Earth, desperate to find a new home among the stars. Following in the footsteps of their ancestors, they discover the greatest treasure of the past age – a world terraformed and prepared for human life.But all is not right in this new Eden. In the long years since the planet was abandoned, the work of its architects has borne disastrous fruit. The planet is not waiting for them, pristine and unoccupied. New masters have turned it from a refuge into mankind’s worst nightmare.Now two civilizations are on a collision course, both testing the boundaries of what they will do to survive. As the fate of humanity hangs in the balance, who are the true heirs of this new Earth?’Children of Time is a joy from start to finish. Entertaining, smart, surprising and unexpectedly human.’ - Patrick Ness, author of A Monster Calls.",
+        "pageCount": "609 pages",
+        "category": "Bestsellers, Science Fiction",
+        "imageURL": "https://res.cloudinary.com/bookbub/image/upload/t_ci_new_browse_cover,f_auto,q_auto/v1554382066/pro_pbid_4350630.jpg",
+        "rating": 0,
+        "prompts": [{
+                "question": "Unusual skills…",
+                "answer": "Sleeping in. Seriously, for like centuries at a time"
+            },
+            {
+                "question": "The Dorkiest Thing About Me is…",
+                "answer": "I love a deep-dive into evolutionary hypotheticals and alien cultures"
+            },
+            {
+                "question": "My most irrational fear…",
+                "answer": "Giant spiders are going to take over the world"
+            }
+        ],
+        "featuredPromptIdx": 0,
+        "review": {
+            "text": "I recently had the pleasure of reading 'Children of Time,' and I was completely immersed in this brilliant work of science fiction. The author's world-building is awe-inspiring, and the narrative is a masterful blend of grand ideas and intimate character stories. The concept of the uplifted spiders and their evolving civilization is utterly unique and thought-provoking. This book explores themes of evolution, intelligence, and the nature of humanity in a way that kept me pondering long after I finished reading. It's a must-read for any science fiction enthusiast.",
+            "reviewer": {
+                "name": "David Turner",
+                "age": 45,
+                "profession": "Astrophysicist"
+            }
+        },
+        "bookbubURL": "https://www.bookbub.com/books/children-of-time-by-adrian-tchaikovsky-2019-04-04"
+    }, {
+        "id": "3675873",
+        "author": "Casey McQuiston",
+        "title": "Red, White & Royal Blue",
+        "description": "The film tie-in edition of the royally romantic, enemies-to-lovers bestseller, from Casey McQuiston. Now a Prime Original movie starring Nicholas Galitzine and Taylor Zakhar Perez.What happens when America’s First Son falls in love with the Prince of Wales?Alex Claremont-Diaz is handsome, charismatic, a genius – pure millennial-marketing gold for the White House ever since his mother first became President of the United States. There’s only one problem. When the tabloids get hold of a photo involving an altercation between Alex and Prince Henry, U.S./British relations take a turn for the worse.Heads of family and state devise a plan for damage control: stage a truce. But what begins as a fake, Instagrammable friendship grows deeper, and more dangerous, than either Alex or Henry could have imagined. Soon they are hurtling into a secret romance that could derail the presidential campaign and upend two nations.’Red, White &amp; Royal Blue is outrageously fun. It is romantic, sexy, witty, and thrilling. I loved every second.’ - Taylor Jenkins Reid, author of Daisy Jones &amp; The Six",
+        "pageCount": "450 pages",
+        "category": "Bestsellers, Contemporary Romance, LGBTQ+",
+        "imageURL": "https://res.cloudinary.com/bookbub/image/upload/t_ci_new_browse_cover,f_auto,q_auto/v1692290690/pro_pbid_5000380.jpg",
+        "rating": 0,
+        "prompts": [{
+                "question": "My love language is…",
+                "answer": "Sarcasm and snogging in secret."
+            },
+            {
+                "question": "The hallmark of a good relationship…",
+                "answer": "More like the Netflix of a good relationship - is that it can survive the weight of a centuries old monarchy."
+            },
+            {
+                "question": "I know the best spot in town for…",
+                "answer": "Writing stump speeches for a presidential campaign. There’s also a reeeeeally roomy janitor’s closet in the back if you want to check it out together…"
+            }
+        ],
+        "featuredPromptIdx": 0,
+        "review": {
+            "text": "I recently had the absolute pleasure of reading 'Red, White & Royal Blue,' and I am bursting with excitement to share just how incredible this book is! From the very first page, I was swept into a world of witty banter, heartfelt romance, and endearing characters. Alex and Henry's love story is not only beautifully written but also refreshingly honest and authentic. This book is a heartwarming celebration of love, friendship, and self-discovery. I laughed, I cried, and I couldn't put it down. Casey McQuiston has delivered a modern romance masterpiece that will leave you with a smile on your face and hope in your heart.",
+            "reviewer": {
+                "name": "Lily Roberts",
+                "age": 28,
+                "profession": "Event Planner"
+            }
+        },
+        "bookbubURL": "https://www.bookbub.com/books/red-white-royal-blue-by-casey-mcquiston-2023-08-31"
+    }, {
+        "id": "2961794",
+        "author": "Amal El-Mohtar and Max Gladstone",
+        "title": "This Is How You Lose the Time War",
+        "description": "* HUGO AWARD WINNER: BEST NOVELLA * NEBULA AND LOCUS AWARDS WINNER: BEST NOVELLA *  “[An] exquisitely crafted tale...Part epistolary romance, part mind-blowing science fiction adventure, this dazzling story unfolds bit by bit, revealing layers of meaning as it plays with cause and effect, wildly imaginative technologies, and increasingly intricate wordplay...This short novel warrants multiple readings to fully unlock its complexities.” --Publishers Weekly (starred review)  From award-winning authors Amal El-Mohtar and Max Gladstone comes an enthralling, romantic novel spanning time and space about two time-traveling rivals who fall in love and must change the past to ensure their future.  Among the ashes of a dying world, an agent of the Commandment finds a letter. It reads: Burn before reading.  Thus begins an unlikely correspondence between two rival agents hellbent on securing the best possible future for their warring factions. Now, what began as a taunt, a battlefield boast, becomes something more. Something epic. Something romantic. Something that could change the past and the future.  Except the discovery of their bond would mean the death of each of them. There’s still a war going on, after all. And someone has to win. That’s how war works, right?  Cowritten by two beloved and award-winning sci-fi writers, This Is How You Lose the Time War is an epic love story spanning time and space.",
+        "pageCount": "208 pages",
+        "category": "",
+        "imageURL": "https://res.cloudinary.com/bookbub/image/upload/t_ci_new_browse_cover,f_auto,q_auto/v1594661488/pro_pbid_4290687.jpg",
+        "rating": 4.233128834355831,
+        "prompts": [{
+                "question": "The best way to ask me out is by…",
+                "answer": "Leaving me messages scattered throughout time"
+            },
+            {
+                "question": "I’m Weirdly Attracted to…",
+                "answer": "Enemy combatants"
+            },
+            {
+                "question": "Together, we could…",
+                "answer": "Reset the timeline, unless we already have"
+            }
+        ],
+        "featuredPromptIdx": 0,
+        "review": {
+            "text": "Gather 'round, fellow time-travel enthusiasts and bibliophiles! 'This is How You Lose the Time War' is like the TARDIS of books—bigger on the inside! It's a temporal love story that had me wibbly-wobbling with excitement. The narrative is a delightful paradox, a nonlinear romance that had me geeking out with joy. The prose is like a sonic screwdriver for your mind, unlocking a literary adventure through space and time. Now, don't blink, or you might miss the subtle yet profound character development. Whether you're a Time Lord or just a curious human, this book is a delightful, timey-wimey read!",
+            "reviewer": {
+                "name": "Arthur Nerdlington",
+                "age": 28,
+                "profession": "Quantum Physicist"
+            }
+        },
+        "bookbubURL": "https://www.bookbub.com/books/this-is-how-you-lose-the-time-war-by-amal-el-mohtar-and-max-gladstone"
+    }, {
+        "id": "1446069",
+        "author": "Harry Kemelman",
+        "title": "Friday the Rabbi Slept Late",
+        "description": "First in the New York Times–bestselling series and winner of the Edgar Award: A new rabbi in a small New England town investigates the murder of a nanny. David Small is the new rabbi in the small Massachusetts town of Barnard’s Crossing. Although he’d rather spend his days engaged in Torah study and theological debate, the daily chores of synagogue life are all-consuming—that is, until the day a nanny’s body is found on the rain-soaked asphalt of the temple’s parking lot.   When the young woman’s purse is discovered in Rabbi Small’s car, he will have to use his scholarly skills and Talmudic wisdom—and collaborate with the Irish-Catholic police chief—to exonerate himself and find the real killer. Blending this unorthodox sleuth’s quick intellect with thrilling action, Friday the Rabbi Slept Late is the exciting first installment of the beloved bestselling mystery series that offers a Jewish twist on the clerical mystery, a delightful discovery for fans of Father Brown and Father Dowling or readers of Faye Kellerman’s suspense novels set in the Orthodox community.  ",
+        "pageCount": "201 pages",
+        "category": "Crime Fiction",
+        "imageURL": "https://res.cloudinary.com/bookbub/image/upload/t_ci_new_browse_cover,f_auto,q_auto/v1574091814/pro_pbid_995374.jpg",
+        "rating": 4.172185430463568,
+        "prompts": [{
+                "question": "Unusual skills…",
+                "answer": "Settling disputes with Talmudic wisdom"
+            },
+            {
+                "question": "Typical sunday…",
+                "answer": "Recovering from services for my prickly congregation"
+            },
+            {
+                "question": "Together, we could…",
+                "answer": "Solve the latest murder in our community"
+            }
+        ],
+        "featuredPromptIdx": 0,
+        "review": {
+            "text": "Ah, 'Friday the Rabbi Slept Late,' a true gem in the world of cozy mysteries. There's something profoundly satisfying about combining Talmudic wisdom with detective work. Rabbi Small's deductive skills are as sharp as a lightsaber, and his subtle humor is a delight for the inner geek. As I followed the clues and unravelled the mystery, I couldn't help but think of it as a meticulously crafted puzzle, much like a Rubik's Cube. The intersection of Jewish traditions and crime-solving is like a fusion reactor of nerdy intrigue. If you're a connoisseur of clever wordplay, intricate mysteries, and the occasional Yiddish expression, this book is your holocron of delight.",
+            "reviewer": {
+                "name": "Leonard Bookman",
+                "age": 35,
+                "profession": "Software Engineer"
+            }
+        },
+        "bookbubURL": "https://www.bookbub.com/books/friday-the-rabbi-slept-late-by-harry-kemelman"
     }
 ]

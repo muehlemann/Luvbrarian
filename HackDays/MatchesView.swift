@@ -11,7 +11,6 @@ struct MatchesView: View {
     @ObservedObject var viewModel = BookViewModel()
     var body: some View {
         VStack(alignment: .leading) {
-            
             let likedBooks = viewModel.getLikedBooks()
             
             // MATCHES COUNT
@@ -28,7 +27,7 @@ struct MatchesView: View {
                             .clipShape(ContainerRelativeShape())
                             .foregroundColor(.white)
                     }
-                
+
             }
             .padding([.top, .horizontal])
             .foregroundColor(Color("BookBubRed"))
@@ -36,19 +35,49 @@ struct MatchesView: View {
             Divider()
                 .background(Color("LightGray"))
             
-            ScrollView {
-                ForEach(likedBooks, id: \.id) { book in
-                    VStack(alignment: .leading) {
-                        Link(destination: URL(string: book.bookbubURL)!) {
-                            MatchView(book: book)
-                                .frame(minHeight: 80)
+            if (likedBooks.count == 0) {
+                VStack(alignment: .center) {
+                    Spacer()
+                    
+                    AsyncImage(
+                        url: URL(string: "https://bookbub-res.cloudinary.com/image/upload/q_auto,f_auto,h_200//bookbub/image/not-enough.png"),
+                        content: { image in
+                            image.resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(
+                                    maxWidth: 200,
+                                    maxHeight: 200
+                                )
+                        },
+                        placeholder: {
+                            ProgressView()
+                        })
+                    
+                    
+                    Text("You don't have any matches.\nSwipe on more books to make Bub happy!")
+                        .font(.subheadline)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .frame(maxWidth: 300)
+                        .multilineTextAlignment(.center)
+                    
+                    Spacer()
+                }
+            } else {
+                ScrollView {
+                    ForEach(likedBooks, id: \.id) { book in
+                        VStack(alignment: .leading) {
+                            Link(destination: URL(string: book.bookbubURL)!) {
+                                MatchView(book: book)
+                                    .frame(minHeight: 80)
+                            }
+                            .accentColor(.black)
+                            
+                            Divider()
+                                .background(Color("LightGray"))
                         }
-                        .accentColor(.black)
-                        
-                        Divider()
-                            .background(Color("LightGray"))
                     }
                 }
+                .padding()
             }
         }
     }
