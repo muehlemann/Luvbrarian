@@ -94,13 +94,16 @@ struct BookDetailView: View {
                             PromptView(prompt: secondPrompt)
                         }
                         
-                        // REVIEW
-                        ReviewView(review: book.review)
+                        // EMOJI VIEW
+                        DefinedEmojiView()
                         
                         // 3ED PROMPT
                         if let thirdPrompt = book.prompts[safe: 2] {
                             PromptView(prompt: thirdPrompt)
                         }
+                        
+                        // REVIEW
+                        ReviewView(review: book.review)
                         
                         // VIEW ON BB CTA
                         if let bookbubURL = URL(string: book.bookbubURL) {
@@ -158,6 +161,32 @@ struct DescriptionView: View {
         }
         .padding()
         .background(Color.indigo.opacity(0.15))
+        .cornerRadius(10)
+        .padding(.top)
+    }
+}
+
+struct DefinedEmojiView: View {
+    
+    var body: some View {
+        HStack(alignment: .center) {
+            let books = ["📕", "📗", "📘", "📙", "📖", "📚", "📓", "📒", "📔", "✍️"]
+            Text(books.randomElement() ?? "✍️")
+                .font(.system(size: 50))
+                .bold()
+                .padding(12)
+                .background(.green.opacity(0.6))
+                .clipShape(Circle())
+            
+            Text("This emoji defines me!")
+                .font(.subheadline)
+                .bold()
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: 4, trailing: 0))
+            
+            Spacer()
+        }
+        .padding()
+        .background(Color.green.opacity(0.15))
         .cornerRadius(10)
         .padding(.top)
     }
