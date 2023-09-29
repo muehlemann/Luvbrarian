@@ -23,6 +23,14 @@
             }
         ],
         "featuredPromptIdx": 0,
+        "review": {
+            "text": "A delightful and humorous journey through the apocalypse! Pratchett and Gaiman's collaboration shines in this script book. I couldn't stop laughing at the witty dialogue and quirky characters. Highly recommended!",
+            "reviewer": {
+                "name": "Alice Johnson",
+                "age": 34,
+                "profession": "Bookstore Owner"
+            }
+        },
         "bookbubURL": "https://www.bookbub.com/books/the-quite-nice-and-fairly-accurate-good-omens-script-book-by-terry-pratchett-and-neil-gaiman"
     },
     {
@@ -49,6 +57,14 @@
             }
         ],
         "featuredPromptIdx": 0,
+        "review": {
+            "text": "A fascinating dive into the world of cryptocurrency! Ben McKenzie and Jacob Silverman provide an eye-opening account of the crypto craze. Their investigative work is commendable, and the book sheds light on the risks and rewards of this digital frontier.",
+            "reviewer": {
+                "name": "David Anderson",
+                "age": 42,
+                "profession": "Financial Analyst"
+            }
+        },
         "bookbubURL": "https://www.bookbub.com/books/easy-money-by-ben-mckenzie-and-jacob-silverman"
     },
     {
@@ -75,6 +91,14 @@
             }
         ],
         "featuredPromptIdx": 0,
+        "review": {
+            "text": "An intriguing and suspenseful tale! Gus Moreno keeps you on the edge of your seat with 'This Thing Between Us.' The mysterious occurrences and peculiar packages add a thrilling twist to the story. Highly recommended for suspense enthusiasts.",
+            "reviewer": {
+                "name": "Emily Roberts",
+                "age": 28,
+                "profession": "Mystery Writer"
+            }
+        },
         "bookbubURL": "https://www.bookbub.com/books/this-thing-between-us-by-gus-moreno"
     },
     {
@@ -101,6 +125,14 @@
             }
         ],
         "featuredPromptIdx": 0,
+        "review": {
+            "text": "A heartbreaking and hilarious memoir! Jennette McCurdy's candid account of her life as a child actor is both touching and funny. Her journey of self-discovery and recovery is inspiring. I couldn't put this book down.",
+            "reviewer": {
+                "name": "Michael Adams",
+                "age": 36,
+                "profession": "Actor"
+            }
+        },
         "bookbubURL": "https://www.bookbub.com/books/i-m-glad-my-mom-died-by-jennette-mccurdy"
     },
     {
@@ -127,6 +159,14 @@
             }
         ],
         "featuredPromptIdx": 0,
+        "review": {
+            "text": "NoViolet Bulawayo's 'Glory' is a powerful and thought-provoking novel. The animal voices add a unique perspective to the story, and the portrayal of a nation in upheaval is both moving and relevant. A must-read for fans of political fiction.",
+            "reviewer": {
+                "name": "Sarah Lewis",
+                "age": 45,
+                "profession": "Political Analyst"
+            }
+        },
         "bookbubURL": "https://www.bookbub.com/books/glory-by-noviolet-bulawayo-30def854-08f0-4d24-8e3a-95adfb69cd18"
     },
     {
@@ -153,6 +193,14 @@
             }
         ],
         "featuredPromptIdx": 0,
+        "review": {
+            "text": "Akwaeke Emezi's 'You Made a Fool of Death with Your Beauty' is a passionate and engaging romance novel. The characters are well-developed, and the tropical setting adds to the allure. I couldn't put this book down!",
+            "reviewer": {
+                "name": "James Patel",
+                "age": 29,
+                "profession": "Travel Blogger"
+            }
+        },
         "bookbubURL": "https://www.bookbub.com/books/you-made-a-fool-of-death-with-your-beauty-by-akwaeke-emezi-2022-02-09"
     },
     {
@@ -179,6 +227,14 @@
             }
         ],
         "featuredPromptIdx": 0,
+        "review": {
+            "text": "Kel's journey to knighthood in 'Protector of the Small' is both inspiring and adventurous. Tamora Pierce creates a captivating medieval world filled with friendship and unforgettable challenges. A must-read for fantasy enthusiasts.",
+            "reviewer": {
+                "name": "Linda Mitchell",
+                "age": 31,
+                "profession": "Historian"
+            }
+        },
         "bookbubURL": "https://www.bookbub.com/books/protector-of-the-small-quartet-by-tamora-pierce"
     },
     {
@@ -205,6 +261,14 @@
             }
         ],
         "featuredPromptIdx": 0,
+        "review": {
+            "text": "Amina al-Sirafi's adventure in 'The Adventures of Amina al-Sirafi' is thrilling and full of surprises. Shannon Chakraborty weaves a tale of danger and legends, and Amina's character is both brave and relatable. Highly recommended for fantasy lovers.",
+            "reviewer": {
+                "name": "Daniel Lee",
+                "age": 38,
+                "profession": "Archaeologist"
+            }
+        },
         "bookbubURL": "https://www.bookbub.com/books/the-adventures-of-amina-al-sirafi-by-shannon-chakraborty"
     },
     {
@@ -231,6 +295,14 @@
             }
         ],
         "featuredPromptIdx": 0,
+        "review": {
+            "text": "The futuristic Brazil in 'The Summer Prince' is a fascinating backdrop for a story filled with love, art, and technology. Alaya Dawn Johnson's writing is vivid, and the characters' journey is both heartwarming and thought-provoking.",
+            "reviewer": {
+                "name": "Laura Martinez",
+                "age": 27,
+                "profession": "Artist"
+            }
+        },
         "bookbubURL": "https://www.bookbub.com/books/the-summer-prince-by-alaya-dawn-johnson"
     },
     {
@@ -257,6 +329,14 @@
             }
         ],
         "featuredPromptIdx": 0,
+        "review": {
+            "text": "Get ready for an exciting heist in 'Portrait of a Thief.' Grace D. Li crafts a thrilling story with a diverse crew and unexpected twists. The heist to steal back looted sculptures is a rollercoaster ride you won't want to miss!",
+            "reviewer": {
+                "name": "Samuel Chen",
+                "age": 30,
+                "profession": "Art Restorer"
+            }
+        },
         "bookbubURL": "https://www.bookbub.com/books/portrait-of-a-thief-by-grace-d-li"
     },
     {
@@ -283,6 +363,14 @@
             }
         ],
         "featuredPromptIdx": 0,
+        "review": {
+            "text": "Becky Chambers' 'A Psalm for the Wild-Built' offers a glimpse into a world of self-aware robots and the beauty of nature. The story is a perfect blend of hope and exploration. A must-read for sci-fi enthusiasts!",
+            "reviewer": {
+                "name": "Olivia Turner",
+                "age": 35,
+                "profession": "Ecologist"
+            }
+        },
         "bookbubURL": "https://www.bookbub.com/books/a-psalm-for-the-wild-built-by-becky-chambers"
     },
     {
@@ -309,6 +397,14 @@
             }
         ],
         "featuredPromptIdx": 0,
+        "review": {
+            "text": "Paulo Coelho's 'The Alchemist' is a timeless masterpiece that resonates with wisdom and inspiration. Santiago's journey to discover his personal legend is a captivating tale of self-discovery and following one's dreams.",
+            "reviewer": {
+                "name": "Robert Clark",
+                "age": 40,
+                "profession": "Philosopher"
+            }
+        },
         "bookbubURL": "https://www.bookbub.com/books/the-alchemist-by-paulo-coelho"
     }
 ]
