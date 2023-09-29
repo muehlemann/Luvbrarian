@@ -43,6 +43,17 @@ struct TutorialView: View {
                         .frame(width: 40, height: 40)
                 }
                 Spacer()
+                Text("Swipe up or tap to see more about your potential match!")
+                    .font(.subheadline)
+                    .multilineTextAlignment(.center)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .foregroundColor(Color.white)
+                Image(systemName: "hand.point.up")
+                    .resizable()
+                    .frame(width: 30, height: 40)
+                    .padding()
+                    .foregroundColor(Color.white)
+                Spacer()
             }
             .padding()
             .background(Color("BookBubRed").opacity(0.9))
