@@ -174,7 +174,7 @@ struct SwipeStatusView: View {
                 Image(systemName: "xmark.circle")
                     .resizable()
                     .frame(width: 60.0, height: 60.0)
-                    .foregroundColor(Color.red)
+                    .foregroundColor(Color.bookBubRed)
                     .rotationEffect(Angle.degrees(15))
                     .shadow(color: .black, radius: 10)
                     .padding(20)

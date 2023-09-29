@@ -20,6 +20,7 @@ struct MatchView: View {
     var body: some View {
         GeometryReader { geometry in
             HStack {
+                // COVER IMAGE
                 AsyncImage(
                     url: URL(string: book.imageURL),
                     content: { image in
@@ -34,19 +35,51 @@ struct MatchView: View {
                         ProgressView()
                     })
                     .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                    .shadow(radius: 5)
                     .padding(.leading, 10)
+
                 
                 VStack(alignment: .leading) {
-                    Text(book.title)
-                        .font(.title3)
-                    
+                    // BOOK TITLE AND RATING
+                    HStack {
+                        Text(book.title)
+                            .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                            .font(.headline)
+                        
+                        Spacer()
+                        
+                        let rating = String(format: "%.1f", Double(book.rating))
+                        
+                        Image(systemName: "star.fill")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .aspectRatio(contentMode: .fit)
+                            .overlay {
+                                Text(rating)
+                                    .font(.caption2)
+                                    .scaledToFit()
+                                    .fontWeight(.semibold)
+                                    .clipShape(ContainerRelativeShape())
+                                    .foregroundColor(.black)
+                            }
+                            .foregroundColor(.yellow)
+                    }
+                    .padding(.bottom, 0)
+
+                    // QUESTION
                     Text(book.prompts[book.featuredPromptIdx].question)
+                        .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                        .font(.subheadline)
+                    // ANSWER
+                    Text(book.prompts[book.featuredPromptIdx].answer)
+                        .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                        .font(.footnote)
+                        .foregroundColor(.gray.opacity(0.8))
+
                 }
                 .padding(.leading, 20)
-
-//                .frame(minWidth: geometry.size.width * 0.6)
-//                Spacer()
             }
-        } 
+            .frame(maxHeight: 100)
+        }
     }
 }

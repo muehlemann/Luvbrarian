@@ -43,6 +43,5 @@ struct NavbarView: View {
             
             Spacer()
         }
-        .background(Color.white)
     }
 }
