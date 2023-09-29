@@ -33,11 +33,13 @@ struct BookDetailView: View {
                         VStack(alignment: .leading) {
                             Text(book.title)
                                 .font(.title)
+                                .foregroundColor(.black)
                                 .bold()
                                 .padding(.top)
                             
                             Text(book.author)
                                 .font(.subheadline)
+                                .foregroundColor(.black)
                         }.padding(.top)
                             
                         // METADATA
@@ -115,6 +117,7 @@ struct DescriptionView: View {
             Text(description)
                 .animation(.easeOut(duration: 1), value: false)
                 .font(.footnote)
+                .foregroundColor(.black)
                 .lineLimit(isExpanded ? nil : 5)
                 .truncationMode(.tail)
             
@@ -125,6 +128,7 @@ struct DescriptionView: View {
                 }
             }
             .font(.footnote)
+            .foregroundColor(.black)
             .underline()
             .padding(.top, 2)
         }
@@ -152,9 +156,11 @@ struct PromptView: View {
                 
                 Text(prompt.question.uppercased())
                     .font(.subheadline)
+                    .foregroundColor(.black)
                     .bold()
                     .fixedSize(horizontal: false, vertical: true)
             }
+            
             Text(prompt.answer)
                 .font(.subheadline)
                 .fixedSize(horizontal: false, vertical: true)

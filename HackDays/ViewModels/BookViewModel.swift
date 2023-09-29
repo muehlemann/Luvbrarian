@@ -42,7 +42,7 @@ class BookViewModel: ObservableObject{
                First published nearly thirty years ago, the novel Good Omens has sold more than five million copies worldwide and is beloved by Gaiman and Pratchett fans alike. Collected here are Neil Gaiman’s original scripts for the Good Omens television series, offering readers deeper insight into Gaiman’s brilliant new adaptation of a masterwork.\n
                A tale of good and evil and the end of the world, Good Omens stars Michael Sheen as the angel Aziraphale; David Tennant as the demon Crowley; and Jon Hamm as the archangel Gabriel, as well as Anna Maxwell Martin, Josie Lawrence, Adria Arjona, Michael McKean, Jack Whitehall, Miranda Richardson, and Nick Offerman.
                """,
-               pageCount: "400",
+               pageCount: "400 pages",
                category: "Humor, Fantasy",
                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1560177843/pro_pbid_4196314.jpg",
                rating: 5.0,
@@ -63,7 +63,7 @@ class BookViewModel: ObservableObject{
                At the height of the pandemic, TV star Ben McKenzie was the perfect mark for cryptocurrency: a dad stuck at home with some cash in his pocket, worried about his family, armed with only the vague notion that people were making heaps of money on something he--despite a degree in economics--didn’t entirely understand. Lured in by grandiose, utopian promises, and sure, a little bit of FOMO, McKenzie dove deep into blockchain, Bitcoin, and the various other coins and exchanges on which they are traded. But after scratching the surface, he had to ask, “Am I crazy, or is this all a total scam?”\n
                In Easy Money, McKenzie enlists the help of journalist Jacob Silverman for an investigative adventure into crypto and its remarkable crash. Weaving together stories of average traders and victims, colorful crypto “visionaries,” Hollywood’s biggest true believers, anti-crypto whistleblowers, and government operatives, Easy Money is an on-the-ground look at a perfect storm of irresponsibility and criminal fraud. Based on original reporting across the country and abroad, including interviews with Sam Bankman-Fried, Tether cofounder Brock Pierce, Celsius’s Alex Mashinsky, and more, this is the book on cryptocurrency you’ve been waiting for.
                """,
-               pageCount: "304",
+               pageCount: "304 pages",
                category: "Nonfiction",
                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1690564196/pro_pbid_5123562.jpg",
                rating: 2.2,
@@ -86,7 +86,7 @@ class BookViewModel: ObservableObject{
                The only thing left to do was get far away from Chicago. Away from everything and everyone. A secluded cabin in Colorado seemed like the perfect place to hole up with his crushing grief. But soon Thiago realizes there is no escape—not from his guilt, not from his simmering rage, and not from the evil hunting him, feeding on his grief, determined to make its way into this world.\n
                A bold, original horror novel about grief, loneliness and the oppressive intimacy of technology, This Thing Between Us marks the arrival of a spectacular new talent.
                """,
-               pageCount: "256",
+               pageCount: "256 pages",
                category: "Horror, Thriller",
                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_2,c_scale,w_405/v1686161939/pro_pbid_4754667.jpg",
                rating: 4.1,
@@ -109,7 +109,7 @@ class BookViewModel: ObservableObject{
                In I’m Glad My Mom Died, Jennette recounts all this in unflinching detail—just as she chronicles what happens when the dream finally comes true. Cast in a new Nickelodeon series called iCarly, she is thrust into fame. Though Mom is ecstatic, emailing fan club moderators and getting on a first-name basis with the paparazzi (“Hi Gale!”), Jennette is riddled with anxiety, shame, and self-loathing, which manifest into eating disorders, addiction, and a series of unhealthy relationships. These issues only get worse when, soon after taking the lead in the iCarly spinoff Sam & Cat alongside Ariana Grande, her mother dies of cancer. Finally, after discovering therapy and quitting acting, Jennette embarks on recovery and decides for the first time in her life what she really wants.\n
                Told with refreshing candor and dark humor, I’m Glad My Mom Died is an inspiring story of resilience, independence, and the joy of shampooing your own hair.
                """,
-               pageCount: "314",
+               pageCount: "314 pages",
                category: "Memoir",
                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_2,c_scale,w_405/v1689632693/pro_pbid_4948915.jpg",
                rating: 4.7,
@@ -131,7 +131,7 @@ class BookViewModel: ObservableObject{
                And at the center of this tumult is Destiny, a young goat who returns to Jidada to bear witness to revolution—and to recount the unofficial history and the potential legacy of the females who have quietly pulled the strings here. The animal kingdom—its connection to our primal responses and its resonance in the mythology, folktales, and fairy tales that define cultures the world over—unmasks the surreality of contemporary global politics to help us understand our world more clearly, even as Bulawayo plucks us right out of it.\n
                Although Zimbabwe is the immediate inspiration for this thrilling story, Glory was written in a time of global clamor, with resistance movements across the world challenging different forms of oppression. Thus it often feels like Bulawayo captures several places in one blockbuster allegory, crystallizing a turning point in history with the texture and nuance that only the greatest fiction can.
                """,
-               pageCount: "403",
+               pageCount: "403 pages",
                category: "Satire, Historical Fiction, Political Fiction",
                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1646751717/pro_pbid_4875402.jpg",
                rating: 4.2,
@@ -154,7 +154,7 @@ class BookViewModel: ObservableObject{
                She’s even started dating the perfect guy, but their new relationship might be sabotaged before it has a chance by the overwhelming desire Feyi feels every time she locks eyes with the one person in the house who is most definitely off-limits—his father.\n
                This new life she asked for just got a lot more complicated, and Feyi must begin her search for real answers. Who is she ready to become? Can she release her past and honor her grief while still embracing her future? And, of course, there’s the biggest question of all—how far is she willing to go for a second chance at love? Akwaeke Emezi’s vivid and passionate writing takes us deep into a world of possibility and healing, and the constant bravery of choosing love against all odds.
                """,
-               pageCount: "279",
+               pageCount: "279 pages",
                category: "Romance",
                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1655915297/pro_pbid_4941429.jpg",
                rating: 3.9,
@@ -174,7 +174,7 @@ class BookViewModel: ObservableObject{
                description: """
                In the medieval and fantastic realm of Tortall, Keladry of Mindelan (known as Kel) is the first girl to take advantage of the decree that permits women to train for knighthood. But not everyone in Tortall believes a woman is up to the task, and Kel faces harsh discrimination. With unparalleled determination and a knack for leadership, she captures the hearts of her peers and proves that she is not a girl to underestimate! From probationary Page to Lady Knight, Kel’s challenging journey is filled with friendship, romance, and unforgettable adventure.
                """,
-               pageCount: "791 across 4 books",
+               pageCount: "791 pages across 4 books",
                category: "Fantasy, YA",
                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_2,c_scale,w_405/v1515394408/pro_pbid_805749.jpg",
                rating: 4.7,
@@ -196,7 +196,7 @@ class BookViewModel: ObservableObject{
                 But when she’s tracked down by the obscenely wealthy mother of a former crewman, she’s offered a job no bandit could refuse: retrieve her comrade’s kidnapped daughter for a kingly sum. The chance to have one last adventure with her crew, do right by an old friend, and win a fortune that will secure her family’s future forever? It seems like such an obvious choice that it must be God’s will.\n
                 Yet the deeper Amina dives, the more it becomes alarmingly clear there’s more to this job, and the girl’s disappearance, than she was led to believe. For there’s always risk in wanting to become a legend, to seize one last chance at glory, to savor just a bit more power…and the price might be your very soul
                 """,
-                pageCount: "496",
+                pageCount: "496 pages",
                 category: "Fantasy",
                 imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_2,c_scale,w_405/v1676562526/pro_pbid_5088914.jpg",
                 rating: 4.7,
@@ -207,6 +207,67 @@ class BookViewModel: ObservableObject{
                            answer: "Ragtag bands of misfit sailors… and the occasional demon"),
                     Prompt(question: "This year I really want to…",
                            answer: "Successfully implement a get-rich-quick scheme without world-altering entanglements")
+                ],
+                featuredPromptIdx: Int.random(in: 0...2)),
+            Book(
+                id: "8",
+                author: "Alaya Dawn Johnson",
+                title: "The Summer Prince",
+                description: """
+                A heart-stopping story of love, death, technology, and art set amid the tropics of a futuristic Brazil.The lush city of Palmares Tres shimmers with tech and tradition, with screaming gossip casters and practiced politicians. In the midst of this vibrant metropolis, June Costa creates art that’s sure to make her legendary. But her dreams of fame become something more when she meets Enki, the bold...
+                """,
+                pageCount: "304 pages",
+                category: "Fantasy",
+                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_2,c_scale,w_405/v1485969717/pro_pbid_468894.jpg",
+                rating: 4.54,
+                prompts: [
+                    Prompt(question: "This Year I Really Want To…",
+                           answer: "Win the government run science fair while simultaneously overthrowing the government! 😅 "),
+                    Prompt(question: "Unusual skills...",
+                           answer: "Zero-gravity grafifti1"),
+                    Prompt(question: "The Dorkiest Thing About Me is…",
+                           answer: "I ❤️ Palmares Tres's Got Talent")
+                ],
+                featuredPromptIdx: Int.random(in: 0...2)),
+            Book(
+                id: "9",
+                author: "Alaya Dawn Johnson",
+                title: "Portrait of a Thief",
+                description: """
+                The glitz of Crazy Rich Asians and the suspense of Ocean’s Eleven” (The Washington Post) collide in this instant New York Times bestseller, already slated for a Netflix adaptation! When a mysterious benefactor offers Harvard senior Will Chen $50 million to steal back five priceless sculptures looted from China, he assembles an eclectic crew for an unforgettable heist. E! Online guarantees, “You are going to want in on this one.
+                """,
+                pageCount: "384 pages",
+                category: "Thriller",
+                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_2,c_scale,w_405/v1659472692/pro_pbid_4883019.jpg",
+                rating: 4.8,
+                prompts: [
+                    Prompt(question: "First round is on me…",
+                           answer: "If you can catch me in my lambo 😛"),
+                    Prompt(question: "The one thing I’d like to know about you is…",
+                           answer: "Your Chinese zodiac animal - I might just be able to get that bronze statue for you..."),
+                    Prompt(question: "Best travel story…",
+                           answer: "Going to the biggest art museums all across the world… maybe once you get to know me I’ll tell you why 👀")
+                ],
+                featuredPromptIdx: Int.random(in: 0...2)),
+            Book(
+                id: "10",
+                author: "Becky Chambers",
+                title: "A Psalm for the Wild-Built",
+                description: """
+                In A Psalm for the Wild-Built, bestselling Becky Chambers’s delightful new Monk and Robot series, gives us hope for the future.\n
+                It’s been centuries since the robots of Panga gained self-awareness and laid down their tools; centuries since they wandered, en masse, into the wilderness, never to be seen again; centuries since they faded into myth and urban legend.
+                """,
+                pageCount: "147 pages",
+                category: "Sci-fi",
+                imageURL: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_2,c_scale,w_405/v1662742543/pro_pbid_4691301.jpg",
+                rating: 5.0,
+                prompts: [
+                    Prompt(question: "Green flags I look for…",
+                           answer: "You love tea, go to therapy, and can’t wait to learn more about the world."),
+                    Prompt(question: "I geek out on…",
+                           answer: "Bioluminescent cave moss. I could spend thousands of years watching it grow!"),
+                    Prompt(question: "Unusual skills...",
+                           answer: "I can bike with my whole house in tow and have existential dread at levels never before seen.")
                 ],
                 featuredPromptIdx: Int.random(in: 0...2)),
             ]
