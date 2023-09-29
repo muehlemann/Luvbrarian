@@ -24,6 +24,8 @@
 		557065CA2AC617D200FEB4CD /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557065C92AC617D200FEB4CD /* SplashView.swift */; };
 		557065CC2AC6269300FEB4CD /* NoMoreBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557065CB2AC6269300FEB4CD /* NoMoreBooks.swift */; };
 		F3FBD5152AC613F60067CFFE /* NavbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBD5142AC613F60067CFFE /* NavbarView.swift */; };
+		F3FBD51B2AC61E8E0067CFFE /* MatchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBD51A2AC61E8E0067CFFE /* MatchesView.swift */; };
+		F3FBD51D2AC61E970067CFFE /* MatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBD51C2AC61E970067CFFE /* MatchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		557065C92AC617D200FEB4CD /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		557065CB2AC6269300FEB4CD /* NoMoreBooks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoMoreBooks.swift; sourceTree = "<group>"; };
 		F3FBD5142AC613F60067CFFE /* NavbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavbarView.swift; sourceTree = "<group>"; };
+		F3FBD51A2AC61E8E0067CFFE /* MatchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesView.swift; sourceTree = "<group>"; };
+		F3FBD51C2AC61E970067CFFE /* MatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,8 @@
 				0A1D71EE2AC5C1B8004D76AE /* Preview Content */,
 				0A1D72172AC5D3A3004D76AE /* BookCard.swift */,
 				F3FBD5142AC613F60067CFFE /* NavbarView.swift */,
+				F3FBD51A2AC61E8E0067CFFE /* MatchesView.swift */,
+				F3FBD51C2AC61E970067CFFE /* MatchView.swift */,
 				0A1626E32AC5EB5C00F5B68F /* SwipeView.swift */,
 				0A1626E52AC5EC2700F5B68F /* BookDetailView.swift */,
 				0A1626EC2AC6136C00F5B68F /* BookViews.swift */,
@@ -307,7 +313,9 @@
 			files = (
 				0A1626E62AC5EC2700F5B68F /* BookDetailView.swift in Sources */,
 				557065CA2AC617D200FEB4CD /* SplashView.swift in Sources */,
+				F3FBD51B2AC61E8E0067CFFE /* MatchesView.swift in Sources */,
 				0A1D71EA2AC5C1B7004D76AE /* ContentView.swift in Sources */,
+				F3FBD51D2AC61E970067CFFE /* MatchView.swift in Sources */,
 				0A1D71E82AC5C1B7004D76AE /* HackDaysApp.swift in Sources */,
 				0A1D72182AC5D3A3004D76AE /* BookCard.swift in Sources */,
 				F3FBD5152AC613F60067CFFE /* NavbarView.swift in Sources */,

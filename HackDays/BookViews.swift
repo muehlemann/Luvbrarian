@@ -13,6 +13,7 @@ struct BookImage: View {
     var percentage: CGFloat
     var contentMode: ContentMode
     
+    
     var body: some View {
         AsyncImage(
             url: URL(string: book.imageURL),

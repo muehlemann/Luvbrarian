@@ -17,7 +17,7 @@ struct ContentView: View {
     var body: some View {
         if (page == .matches) {
             VStack {
-                Text("Matches View Here")
+                MatchesView()
                 NavbarView(
                     onBookClick: { Page in page = .books},
                     onMatchesClick: { Page in page = .matches}
