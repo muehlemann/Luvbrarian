@@ -19,5 +19,6 @@ struct Book: Codable {
     var rating: Float
     var prompts: Array<Prompt>
     var featuredPromptIdx: Int
+    var review: Review
     var bookbubURL: String
 }

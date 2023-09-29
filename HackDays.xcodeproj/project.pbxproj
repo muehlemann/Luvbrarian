@@ -20,6 +20,9 @@
 		0A1D72062AC5C1B8004D76AE /* HackDaysUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D72052AC5C1B8004D76AE /* HackDaysUITestsLaunchTests.swift */; };
 		0A1D72162AC5C92D004D76AE /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D72152AC5C92D004D76AE /* Book.swift */; };
 		0A1D72182AC5D3A3004D76AE /* BookCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D72172AC5D3A3004D76AE /* BookCard.swift */; };
+		0AE680DE2AC73B820067EC8A /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE680DD2AC73B820067EC8A /* Review.swift */; };
+		0AE680E02AC73BCB0067EC8A /* Reviewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE680DF2AC73BCB0067EC8A /* Reviewer.swift */; };
+		0AE680E32AC73CEA0067EC8A /* Collections+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE680E22AC73CEA0067EC8A /* Collections+Extension.swift */; };
 		0AEDC18E2AC70B8000D8AD2D /* books.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AEDC18D2AC70B8000D8AD2D /* books.json */; };
 		557065C62AC5E49500FEB4CD /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557065C52AC5E49500FEB4CD /* Prompt.swift */; };
 		557065CA2AC617D200FEB4CD /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557065C92AC617D200FEB4CD /* SplashView.swift */; };
@@ -65,6 +68,9 @@
 		0A1D72052AC5C1B8004D76AE /* HackDaysUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackDaysUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0A1D72152AC5C92D004D76AE /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		0A1D72172AC5D3A3004D76AE /* BookCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCard.swift; sourceTree = "<group>"; };
+		0AE680DD2AC73B820067EC8A /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		0AE680DF2AC73BCB0067EC8A /* Reviewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviewer.swift; sourceTree = "<group>"; };
+		0AE680E22AC73CEA0067EC8A /* Collections+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collections+Extension.swift"; sourceTree = "<group>"; };
 		0AEDC18D2AC70B8000D8AD2D /* books.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = books.json; sourceTree = "<group>"; };
 		557065C52AC5E49500FEB4CD /* Prompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompt.swift; sourceTree = "<group>"; };
 		557065C92AC617D200FEB4CD /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -131,6 +137,7 @@
 		0A1D71E62AC5C1B7004D76AE /* HackDays */ = {
 			isa = PBXGroup;
 			children = (
+				0AE680E12AC73CD90067EC8A /* Utils */,
 				0A1626E02AC5E95800F5B68F /* ViewModels */,
 				0A1D72142AC5C921004D76AE /* Models */,
 				0A1D71E72AC5C1B7004D76AE /* HackDaysApp.swift */,
@@ -183,8 +190,18 @@
 			children = (
 				0A1D72152AC5C92D004D76AE /* Book.swift */,
 				557065C52AC5E49500FEB4CD /* Prompt.swift */,
+				0AE680DD2AC73B820067EC8A /* Review.swift */,
+				0AE680DF2AC73BCB0067EC8A /* Reviewer.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0AE680E12AC73CD90067EC8A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0AE680E22AC73CEA0067EC8A /* Collections+Extension.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +337,7 @@
 			files = (
 				0A1626E62AC5EC2700F5B68F /* BookDetailView.swift in Sources */,
 				557065CE2AC70FEA00FEB4CD /* TutorialView.swift in Sources */,
+				0AE680E02AC73BCB0067EC8A /* Reviewer.swift in Sources */,
 				557065CA2AC617D200FEB4CD /* SplashView.swift in Sources */,
 				F3FBD51B2AC61E8E0067CFFE /* MatchesView.swift in Sources */,
 				0A1D71EA2AC5C1B7004D76AE /* ContentView.swift in Sources */,
@@ -327,12 +345,14 @@
 				0A1D71E82AC5C1B7004D76AE /* HackDaysApp.swift in Sources */,
 				0A1D72182AC5D3A3004D76AE /* BookCard.swift in Sources */,
 				F3FBD5152AC613F60067CFFE /* NavbarView.swift in Sources */,
+				0AE680DE2AC73B820067EC8A /* Review.swift in Sources */,
 				0A1626E42AC5EB5C00F5B68F /* SwipeView.swift in Sources */,
 				0A1D72162AC5C92D004D76AE /* Book.swift in Sources */,
 				557065C62AC5E49500FEB4CD /* Prompt.swift in Sources */,
 				0A1626ED2AC6136C00F5B68F /* BookViews.swift in Sources */,
 				0A1626E22AC5E96100F5B68F /* BookViewModel.swift in Sources */,
 				557065CC2AC6269300FEB4CD /* NoMoreBooks.swift in Sources */,
+				0AE680E32AC73CEA0067EC8A /* Collections+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

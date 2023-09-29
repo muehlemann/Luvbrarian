@@ -39,6 +39,7 @@ class BookViewModel: ObservableObject{
                 bookCopy.featuredPromptIdx = Int.random(in: 0...2)
                 return bookCopy
             }
+            .shuffled()
         }
         
         print("Error")

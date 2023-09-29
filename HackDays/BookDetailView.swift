@@ -80,7 +80,7 @@ struct BookDetailView: View {
                         .padding(.top)
                         
                         // 1ST PROMPT
-                        if let firstPrompt = book.prompts.first {
+                        if let firstPrompt = book.prompts[safe: 0] {
                             PromptView(prompt: firstPrompt)
                         }
                         
@@ -89,11 +89,17 @@ struct BookDetailView: View {
                             DescriptionView(description: book.description)
                         }
                         
-                        // OTHER PROMPTS
-                        VStack(alignment: .leading) {
-                            ForEach(book.prompts[1..<book.prompts.count], id: \.question) { prompt in
-                                PromptView(prompt: prompt)
-                            }
+                        // 2ND PROMPT
+                        if let secondPrompt = book.prompts[safe: 1] {
+                            PromptView(prompt: secondPrompt)
+                        }
+                        
+                        // REVIEW
+                        ReviewView(review: book.review)
+                        
+                        // 3ED PROMPT
+                        if let thirdPrompt = book.prompts[safe: 2] {
+                            PromptView(prompt: thirdPrompt)
                         }
                         
                         // VIEW ON BB CTA
@@ -127,7 +133,7 @@ struct DescriptionView: View {
 
     var body: some View {
         VStack(alignment: .leading) {
-            Text("DESCRIPTION")
+            Text("What my parents say about me...")
                 .font(.subheadline)
                 .bold()
                 .padding(EdgeInsets(top: 0, leading: 0, bottom: 4, trailing: 0))
@@ -151,7 +157,51 @@ struct DescriptionView: View {
             .padding(.top, 2)
         }
         .padding()
-        .background(.brown.opacity(0.15))
+        .background(Color.indigo.opacity(0.15))
+        .cornerRadius(10)
+        .padding(.top)
+    }
+}
+
+struct ReviewView: View {
+    var review: Review
+    
+    var body: some View {
+        VStack(alignment: .leading) {
+            Text("What my friends say about me...")
+                .font(.subheadline)
+                .bold()
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: 4, trailing: 0))
+            
+            Text(review.text)
+                .font(.footnote)
+                .foregroundColor(.black)
+            
+            HStack {
+                let faces = ["☺️", "😆", "🤪", "👹", "🎃", "🤡", "💀", "😈"]
+                Text(faces.randomElement() ?? "🫥")
+                    .font(.footnote)
+                    .bold()
+                    .padding(6)
+                    .background(.brown.opacity(0.8))
+                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+
+                VStack(alignment: .leading) {
+                    Text("\(review.reviewer.name), \(review.reviewer.age)")
+                        .font(.caption)
+                        .bold()
+                        .foregroundColor(.black)
+                    
+                    Text(review.reviewer.profession)
+                        .font(.caption)
+                        .italic()
+                        .foregroundColor(.black)
+                }
+            }
+            .padding(.top, 2)
+        }
+        .padding()
+        .background(Color.orange.opacity(0.15))
         .cornerRadius(10)
         .padding(.top)
     }
