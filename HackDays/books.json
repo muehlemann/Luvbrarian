@@ -430,6 +430,14 @@
                 "answer": "Get a new job. I’m tired of running the assisted suicide roller coaster."
             }
         ],
+        "review": {
+            "text": "It's good!",
+            "reviewer": {
+                "name": "Richard Davis",
+                "age": 40,
+                "profession": "Student"
+            }
+        },
         "featuredPromptIdx": 0,
         "bookbubURL": "https://www.bookbub.com/books/how-high-we-go-in-the-dark-by-sequoia-nagamatsu"
     }
